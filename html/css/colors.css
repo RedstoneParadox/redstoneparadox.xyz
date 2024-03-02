@@ -1,0 +1,23 @@
+.light-mode-base {
+    background-color: white;
+    color: #222;
+}
+
+.text-box.light-mode {
+    background-color: #e4e4e4;
+    color: #222;
+}
+
+.header.light-mode {
+    background-color: #c5c5c5;
+    color: #222;
+}
+
+.footer.light-mode {
+    background-color: #c5c5c5;
+    color: #222;
+}
+
+hr {
+    background-color: #888;
+}
