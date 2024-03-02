@@ -1,0 +1,9 @@
+.align-center {
+    display: flex;
+    align-items: center;
+}
+
+.align-right {
+    display: flex;
+    align-items: end;
+}

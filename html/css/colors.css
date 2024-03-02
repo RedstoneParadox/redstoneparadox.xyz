@@ -17,3 +17,8 @@
     background-color: #dfe1e6;
     color: #222;
 }
+
+body.dark-mode {
+    color: #e2e0e0;
+    background-color: #1b1b1f;
+}
