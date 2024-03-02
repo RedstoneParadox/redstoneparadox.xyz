@@ -9,15 +9,11 @@
 }
 
 .header.light-mode {
-    background-color: #c5c5c5;
+    background-color: #c2c5cc;
     color: #222;
 }
 
 .footer.light-mode {
-    background-color: #c5c5c5;
+    background-color: #dfe1e6;
     color: #222;
-}
-
-hr {
-    background-color: #888;
 }
