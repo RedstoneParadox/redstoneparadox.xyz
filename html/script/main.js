@@ -11,6 +11,7 @@ function toggleDarkMode() {
   nav_links[1].classList.toggle("dark-mode")
 
   var themeIcon = document.getElementById("themeIcon")
+  themeIcon.classList.toggle("dark-mode")
   if (body.classList.contains("dark-mode")) {
     themeIcon.src = "images/button/light_mode_FILL0_wght400_GRAD0_opsz24.svg"
   } else {

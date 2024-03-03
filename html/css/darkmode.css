@@ -18,3 +18,7 @@ body.dark-mode {
     background-color: #45474d;
     color: white;
 }
+
+.theme-button.dark-mode:hover {
+    background-color: #45474d;
+}
