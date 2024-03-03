@@ -41,29 +41,54 @@
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <div class="row header shadow-4" id="header">
-  <div class="four columns align-center-v" style="height: 100%;">
-    <div style="width: 64px;height: 64px;border-radius: 50%;background-color: white;margin-left: 5%;margin-right: 16px;">
-      <img src="images/redstone_torch.png" style="width:64px;height:64px;">
+  <div class="large-screens-only">
+    <div class="four columns align-center-v" style="height: 100%;">
+      <div class="site-icon">
+        <img src="images/redstone_torch.png" style="width:100%;height:100%;">
+      </div>
+      <span class="site-name">Redstone Paradox</span>
     </div>
-    <span style="font-size: xx-large;color: #b37d7d">Redstone Paradox</span>
-  </div>
-  <div class="four columns align-center-h", style="height: 100%;">
-    <div class="three columns"></div>
-    <div class="three columns align-center-v" style="height: 100%;">
-      <div style="width:100%;text-align: center;"><a href="" class="nav-link">Home</a></div>
+    <div class="four columns align-center-h", style="height: 100%;">
+      <div class="three columns"></div>
+      <div class="three columns align-center-v" style="height: 100%;">
+        <div style="width:100%;text-align: center;"><a href="" class="nav-link">Home</a></div>
+      </div>
+      <div class="three columns align-center-v" style="height: 100%;">
+        <div style="width:100%;text-align: center;"><a href="https://maven.redstoneparadox.xyz" class="nav-link">Maven</a></div>
+      </div>
+      <div class="three columns"></div>
     </div>
-    <div class="three columns align-center-v" style="height: 100%;">
-      <div style="width:100%;text-align: center;">
-        <a href="https://maven.redstoneparadox.xyz" class="nav-link">Maven</a>
+    <div class="four columns" style="height: 100%">
+      <div class="align-center-v", style="width: 100%;height: 100%;">
+        <a onclick="toggleDarkMode()" class="theme-button" style="margin-left: auto;margin-right: 5%;">
+          <img src="images/button/dark_mode_FILL0_wght400_GRAD0_opsz24.svg"  class="theme-icon" id="themeIcon">
+        </a>
       </div>
     </div>
-    <div class="three columns"></div>
   </div>
-  <div class="four columns" style="height: 100%">
-    <div class="align-center-v", style="width: 100%;height: 100%;">
-      <a onclick="toggleDarkMode()" class="theme-button" style="margin-left: auto;margin-right: 5%;">
-        <img src="images/button/dark_mode_FILL0_wght400_GRAD0_opsz24.svg"  class="theme-icon" id="themeIcon">
-      </a>
+  <div class="small-screens-only">
+    <div class="align-center-v" style="width:60%;height:50%;box-sizing:border-box;float: left;">
+      <div class="site-icon">
+        <img src="images/redstone_torch.png" style="width:100%;height:100%;">
+      </div>
+      <span class="site-name">Redstone Paradox</span>
+    </div>
+    <div class="align-right-h" style="width:40%;height:50%;box-sizing:border-box;">
+      <div class="align-center-v" style="width: 100%;height: 100%;">
+        <a onclick="toggleDarkMode()" class="theme-button" style="margin-left: auto;margin-right: 5%;">
+          <img src="images/button/dark_mode_FILL0_wght400_GRAD0_opsz24.svg"  class="theme-icon" id="themeIcon">
+        </a>
+      </div>
+    </div>
+    <div style="height: 50%;">
+      <div style="width:22%;box-sizing:border-box;float:left;"></div>
+      <div class="align-center-v" style="width:22%;box-sizing:border-box;float:left;">
+        <div style="width:100%;text-align: center;"><a href="" class="nav-link">Home</a></div>
+      </div>
+      <div class="align-center-v" style="width:22%;box-sizing:border-box;float:left;">
+        <div style="width:100%;text-align: center;"><a href="https://maven.redstoneparadox.xyz" class="nav-link">Maven</a></div>
+      </div>
+      <div style="width:22%;box-sizing:border-box;float:left;"></div>
     </div>
   </div>
 </div>
