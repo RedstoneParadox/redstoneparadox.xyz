@@ -1,5 +1,5 @@
-.light-mode-base {
-    background-color: white;
+body.light-mode {
+    background-color: #e6eaf2;
     color: #222;
 }
 
