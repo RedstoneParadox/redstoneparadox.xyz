@@ -1,13 +1,14 @@
 function toggleDarkMode() {
-  var textBox = document.querySelector("#text-box")
-  textBox.classList.toggle("dark-mode")
   var header = document.querySelector("#header")
-  header.classList.toggle("dark-mode")
   var footer = document.querySelector("#footer")
-  footer.classList.toggle("dark-mode")
   var body = document.body
-  body.classList.toggle("dark-mode")
+  var nav_links  = document.querySelectorAll(".nav-link")
 
+  header.classList.toggle("dark-mode")
+  footer.classList.toggle("dark-mode")
+  body.classList.toggle("dark-mode")
+  nav_links[0].classList.toggle("dark-mode")
+  nav_links[1].classList.toggle("dark-mode")
 
   var themeIcon = document.getElementById("themeIcon")
   if (body.classList.contains("dark-mode")) {
