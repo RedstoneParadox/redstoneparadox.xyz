@@ -1,22 +1,11 @@
 .text-box {
     border-radius: 6px;
     padding: 12px;
-    background-color: #e4e4e4;
-    color: #222;
-}
-.text-box.dark-mode {
-    background-color: #2e2e2e;
-    color: #ccc;
 }
 
 .header {
-    width: 100%;
-    background-color: #c5c5c5;
-    color: #222;
-}
-.header.dark-mode {
-    background-color: #242424;
-    color: #ccc;
+    height: 80px;
+    padding: 8px;
 }
 
 .footer {
@@ -26,25 +15,33 @@
     color: #222;
     flex-grow: 1;
 }
-.footer.dark-mode {
-    background-color: #242424;
-    color: #ccc;
-}
 
-.button.dark-mode-button {
-    border-radius: 19px;
-    width: 38px;
-    height: 38px;
-    display: inline-block;
-    margin-left: auto;
-    padding-left: 0%;
+.dark-mode-button {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 4px;
+}
+.dark-mode-button:hover {
+    background-color: #a1a6b3;
 }
 
 .theme-icon {
-    width: 32px;
-    height: 32px;
-    margin-left: 50%;
-    margin-right: 50%;
-    margin-top: 50%;
-    margin-bottom: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+.nav-link {
+    font-size:xx-large;
+    margin: 4px;
+    text-decoration: none;
+    color: #6b81b3;
+    display: block;
+}
+.nav-link:hover {
+    background-color: #a1a6b3;
+    color: white;
+}
+.nav-link-box:hover {
+    background-color: aqua;
 }

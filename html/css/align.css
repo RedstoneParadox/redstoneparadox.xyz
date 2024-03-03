@@ -4,12 +4,18 @@ html, body {
     flex-direction: column;
 }
 
-.align-center {
+.align-center-h {
     display: flex;
     align-items: center;
 }
 
-.align-right {
+.align-center-v {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.align-right-h {
     display: flex;
     align-items: end;
 }
