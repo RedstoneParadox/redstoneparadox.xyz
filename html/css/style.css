@@ -3,11 +3,16 @@ body {
     color: #222;
 }
 
-.header {
-    min-height: 80px;
-    padding: 8px;
-    background-color: #c2c5cc;
+.header-top {
+    background-color: #b6b9bf;
     color: #222;
+    border-bottom: 1px solid #919499;
+}
+
+.header-nav {
+    background-color: #aaadb3;
+    color: #222;
+    border-bottom: 1px solid #919499;
 }
 
 .footer {
@@ -36,11 +41,15 @@ body {
 
 .nav-link {
     font-size:large;
-    margin: 4px;
     text-decoration: none;
     color: #b37d7d;
     display: block;
-    border-radius: 8px;
+    width: 96px;
+    text-align: center;
+    border-left: 1px solid #919499;
+}
+.nav-link.end {
+    border-right: 1px solid #919499;
 }
 .nav-link:hover {
     background-color: #a1a6b3;
@@ -50,14 +59,13 @@ body {
 .site-name {
     font-size: large;
     color: #b37d7d;
+    margin-left: 1%;
 }
 .site-icon {
     width: 32px;
     height: 32px;
     border-radius: 50%;
     background-color: white;
-    margin-left: 2px;
-    margin-right: 2px;
 }
 
 .social-icon {
@@ -85,8 +93,6 @@ body {
     .site-icon {
         width: 64px;
         height: 64px;
-        margin-left: 5%;
-        margin-right: 16px;
     }
     .theme-button {
         border-radius: 50%;
@@ -100,10 +106,6 @@ body {
     .small-screens-only {
         display: none;
     }
-    .site-icon {
-        margin-left: 5%;
-        margin-right: 8px;
-    }
 }
 /* Larger than desktop */
 @media (min-width: 1000px) {
@@ -116,9 +118,7 @@ body {
 }
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {
-    .nav-link {
-        font-size: xx-large;
-    }
+
     .site-name {
         font-size: xx-large;
     }
