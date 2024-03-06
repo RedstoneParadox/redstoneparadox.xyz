@@ -1,7 +1,7 @@
 function toggleDarkMode() {
   var header_top = document.querySelector(".header-top")
   var header_nav = document.querySelector(".header-nav")
-  var footer = document.querySelector("#footer")
+  var footer = document.querySelector(".footer")
   var body = document.body
   var nav_links  = document.querySelectorAll(".nav-link")
 
