@@ -14,7 +14,7 @@ body.dark-mode {
     border-bottom: 1px solid #545659;
 }
 
-.footer.dark-mode {
+footer.dark-mode {
     color: #dedede;
     border-color: #3d3e40;
     background-color: #2c2c2e;
