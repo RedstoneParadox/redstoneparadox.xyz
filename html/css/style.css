@@ -16,7 +16,6 @@ body {
 .header-nav {
     background-color: #c5c8d6;
     color: #222;
-    /*border-bottom: 1px solid #919499;*/
 }
 
 .footer {
@@ -30,9 +29,9 @@ body {
 
 .theme-button {
     border-radius: 50%;
-    width: 32px;
-    height: 32px;
-    padding: 4px;
+    width: 16px;
+    height: 16px;
+    padding: 2px;
 }
 .theme-button:hover {
     background-color: #b4b8bf;
@@ -50,12 +49,12 @@ body {
     display: block;
     width: 96px;
     text-align: center;
-    height: 42px;
+    height: 32px;
 }
 
 .nav-link.selected {
-    border-bottom: 4px solid #b37d7d;
-    height: 38px;
+    border-bottom: 2px solid #b37d7d;
+    height: 30px;
 }
 
 .nav-link:hover {
@@ -122,6 +121,15 @@ body {
     }
     .site-name {
         font-size: x-large;
+    }
+    .nav-link {
+        width: 96px;
+        text-align: center;
+        height: 42px;
+    }
+    .nav-link.selected {
+        border-bottom: 4px solid #b37d7d;
+        height: 38px;
     }
 }
 /* Larger than Desktop HD */

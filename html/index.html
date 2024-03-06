@@ -41,8 +41,8 @@
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <header id="header" class="shadow-4">
-  <div class="large-screens-only">
-    <div class="row header-top">
+  <div class="row header-top">
+    <div class="large-screens-only">
       <div class="six columns align-center-v">
         <img src="images/redstone_torch.png" class="site-icon">
         <span class="site-name">Redstone Paradox</span>
@@ -56,38 +56,24 @@
         </div>
       </div>
     </div>
-    <div class="row header-nav">
-      <div class="align-center-h">
-        <div class="align-center-v">
-          <a href="" class="nav-link selected">Home</a>
-          <a href="https://maven.redstoneparadox.xyz" class="nav-link">Maven</a>
-        </div>
+    <div class="small-screens-only">
+      <div style="width: 60%;float: left;">
+        <img src="images/redstone_torch.png" class="site-icon">
+        <span class="site-name">Redstone Paradox</span>
       </div>
-    </div>
-  </div>
-  <div class="small-screens-only">
-    <div class="align-center-v" style="width:60%;height:50%;box-sizing:border-box;float: left;">
-      <div class="site-icon">
-        <img src="images/redstone_torch.png" style="width:100%;height:100%;">
-      </div>
-      <span class="site-name">Redstone Paradox</span>
-    </div>
-    <div class="align-right-h" style="width:40%;height:50%;box-sizing:border-box;">
-      <div class="align-center-v" style="width: 100%;height: 100%;">
-        <a onclick="toggleDarkMode()" class="theme-button" style="margin-left: auto;margin-right: 5%;">
+      <div class="align-right-h" style="width: 40%;">
+        <a onclick="toggleDarkMode()" class="theme-button">
           <img src="images/button/dark_mode_FILL0_wght400_GRAD0_opsz24.svg"  class="theme-icon" id="themeIcon">
         </a>
       </div>
     </div>
-    <div style="height: 50%;">
-      <div style="width:22%;box-sizing:border-box;float:left;"></div>
-      <div class="align-center-v" style="width:22%;box-sizing:border-box;float:left;">
-        <div style="width:100%;text-align: center;"><a href="" class="nav-link">Home</a></div>
+  </div>
+  <div class="row header-nav">
+    <div class="align-center-h">
+      <div class="align-center-v">
+        <a href="" class="nav-link selected">Home</a>
+        <a href="https://maven.redstoneparadox.xyz" class="nav-link">Maven</a>
       </div>
-      <div class="align-center-v" style="width:22%;box-sizing:border-box;float:left;">
-        <div style="width:100%;text-align: center;"><a href="https://maven.redstoneparadox.xyz" class="nav-link">Maven</a></div>
-      </div>
-      <div style="width:22%;box-sizing:border-box;float:left;"></div>
     </div>
   </div>
 </header>
