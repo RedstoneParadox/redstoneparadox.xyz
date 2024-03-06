@@ -42,14 +42,13 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <header id="header">
   <div class="large-screens-only">
-    <div class="row header-top" style="height: 80px;">
-      <div class="six columns align-center-v" style="height:100%;padding-left: 1%;">
-        <div class="site-icon">
-          <img src="images/redstone_torch.png" style="width:100%;height:100%;">
-        </div>
+    <div class="row header-top">
+      <div class="six columns align-center-v">
+        <img src="images/redstone_torch.png" class="site-icon">
         <span class="site-name">Redstone Paradox</span>
       </div>
-      <div class="six columns align-center-v" style="height: 100%;padding-right: 1%;">
+      <!--Not sure why I have to set the height manually here instead of just doing height:100%, but oh well-->
+      <div class="six columns align-center-v" style="height:48px;">
         <div class="align-right-h">
           <a onclick="toggleDarkMode()" class="theme-button">
             <img src="images/button/dark_mode_FILL0_wght400_GRAD0_opsz24.svg"  class="theme-icon" id="themeIcon">

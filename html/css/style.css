@@ -7,6 +7,10 @@ body {
     background-color: #b6b9bf;
     color: #222;
     border-bottom: 1px solid #919499;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 
 .header-nav {
@@ -60,10 +64,11 @@ body {
     font-size: large;
     color: #b37d7d;
     margin-left: 1%;
+    font-weight: 600;
 }
 .site-icon {
-    width: 32px;
-    height: 32px;
+    width: 16px;
+    height: 16px;
     border-radius: 50%;
     background-color: white;
 }
@@ -91,8 +96,8 @@ body {
 /* Larger than tablet */
 @media (min-width: 750px) {
     .site-icon {
-        width: 64px;
-        height: 64px;
+        width: 48px;
+        height: 48px;
     }
     .theme-button {
         border-radius: 50%;
