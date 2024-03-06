@@ -16,7 +16,7 @@ body.dark-mode {
 
 .nav-link.dark-mode:hover {
     background-color: #45474d;
-    color: white;
+    color: #ebedf2;
 }
 
 .theme-button.dark-mode:hover {

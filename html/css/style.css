@@ -1,12 +1,12 @@
 body {
-    background-color: #e6eaf2;
+    background-color: #ebedf2;
     color: #222;
 }
 
 .header-top {
-    background-color: #b6b9bf;
+    background-color: #cacedb;
     color: #222;
-    border-bottom: 1px solid #919499;
+    border-bottom: 1px solid #b4b8bf;
     padding-left: 1%;
     padding-right: 1%;
     padding-top: 8px;
@@ -14,9 +14,9 @@ body {
 }
 
 .header-nav {
-    background-color: #aaadb3;
+    background-color: #c5c8d6;
     color: #222;
-    border-bottom: 1px solid #919499;
+    /*border-bottom: 1px solid #919499;*/
 }
 
 .footer {
@@ -24,7 +24,7 @@ body {
     margin-top: 5%;
     flex-grow: 1;
     border-top: 1px solid #c2c5cc;
-    background-color: #dfe1e6;
+    background-color: #dfe2eb;
     color: #222;
 }
 
@@ -50,14 +50,12 @@ body {
     display: block;
     width: 96px;
     text-align: center;
-    border-left: 1px solid #919499;
+
 }
-.nav-link.end {
-    border-right: 1px solid #919499;
-}
+
 .nav-link:hover {
-    background-color: #a1a6b3;
-    color: white;
+    background-color: #b4b8bf;
+    color: #ebedf2;
 }
 
 .site-name {
@@ -70,7 +68,7 @@ body {
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    background-color: white;
+    background-color: #ebedf2;
 }
 
 .social-icon {
