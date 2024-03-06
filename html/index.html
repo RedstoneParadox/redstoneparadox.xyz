@@ -40,67 +40,53 @@
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<div class="row header shadow-4" id="header">
-  <div class="large-screens-only">
-    <div class="four columns align-center-v" style="height: 100%;">
-      <div class="site-icon">
-        <img src="images/redstone_torch.png" style="width:100%;height:100%;">
+<header id="header" class="shadow-4">
+  <div class="row header-top">
+    <div class="large-screens-only">
+      <div class="six columns align-center-v">
+        <img src="images/redstone_torch.png" class="site-icon">
+        <span class="site-name">Redstone Paradox</span>
       </div>
-      <span class="site-name">Redstone Paradox</span>
+      <!--Not sure why I have to set the height manually here instead of just doing height:100%, but oh well-->
+      <div class="six columns align-center-v" style="height:48px;">
+        <div class="align-right-h">
+          <a onclick="toggleDarkMode()" class="theme-button">
+            <img src="images/button/dark_mode_FILL0_wght400_GRAD0_opsz24.svg"  class="theme-icon" id="themeIcon">
+          </a>
+        </div>
+      </div>
     </div>
-    <div class="four columns align-center-h", style="height: 100%;">
-      <div class="three columns"></div>
-      <div class="three columns align-center-v" style="height: 100%;">
-        <div style="width:100%;text-align: center;"><a href="" class="nav-link">Home</a></div>
+    <div class="small-screens-only">
+      <div style="width: 60%;float: left;">
+        <img src="images/redstone_torch.png" class="site-icon">
+        <span class="site-name">Redstone Paradox</span>
       </div>
-      <div class="three columns align-center-v" style="height: 100%;">
-        <div style="width:100%;text-align: center;"><a href="https://maven.redstoneparadox.xyz" class="nav-link">Maven</a></div>
-      </div>
-      <div class="three columns"></div>
-    </div>
-    <div class="four columns" style="height: 100%">
-      <div class="align-center-v", style="width: 100%;height: 100%;">
-        <a onclick="toggleDarkMode()" class="theme-button" style="margin-left: auto;margin-right: 5%;">
+      <div class="align-right-h" style="width: 40%;">
+        <a onclick="toggleDarkMode()" class="theme-button">
           <img src="images/button/dark_mode_FILL0_wght400_GRAD0_opsz24.svg"  class="theme-icon" id="themeIcon">
         </a>
       </div>
     </div>
   </div>
-  <div class="small-screens-only">
-    <div class="align-center-v" style="width:60%;height:50%;box-sizing:border-box;float: left;">
-      <div class="site-icon">
-        <img src="images/redstone_torch.png" style="width:100%;height:100%;">
+  <div class="row header-nav">
+    <div class="align-center-h">
+      <div class="align-center-v">
+        <a href="" class="nav-link selected">Home</a>
+        <a href="https://maven.redstoneparadox.xyz" class="nav-link">Maven</a>
       </div>
-      <span class="site-name">Redstone Paradox</span>
-    </div>
-    <div class="align-right-h" style="width:40%;height:50%;box-sizing:border-box;">
-      <div class="align-center-v" style="width: 100%;height: 100%;">
-        <a onclick="toggleDarkMode()" class="theme-button" style="margin-left: auto;margin-right: 5%;">
-          <img src="images/button/dark_mode_FILL0_wght400_GRAD0_opsz24.svg"  class="theme-icon" id="themeIcon">
-        </a>
-      </div>
-    </div>
-    <div style="height: 50%;">
-      <div style="width:22%;box-sizing:border-box;float:left;"></div>
-      <div class="align-center-v" style="width:22%;box-sizing:border-box;float:left;">
-        <div style="width:100%;text-align: center;"><a href="" class="nav-link">Home</a></div>
-      </div>
-      <div class="align-center-v" style="width:22%;box-sizing:border-box;float:left;">
-        <div style="width:100%;text-align: center;"><a href="https://maven.redstoneparadox.xyz" class="nav-link">Maven</a></div>
-      </div>
-      <div style="width:22%;box-sizing:border-box;float:left;"></div>
     </div>
   </div>
-</div>
+</header>
   <div class="row" style="margin-top: 5%;">
     <div class="container">
       <div class="one-half column">
         <h4 style="color: #b37d7d;">Welcome to my Website!</h4>
         <p>
-          My (user)name is RedstoneParadox and I am a hobbyist programmer from a place that hopefully exists.<br><br>
-          I started out modding minecraft back in 2017 and since then, I've made several mods for a few different games and have done a number of other programming projects, including a bit of game dev.<br><br>
-          I've also dabbled a bit in electronic music.<br><br>
-          As you can see, my website is a bit barebones at the moment; come back in the future and there will be more to see here, I promise!
+          I am RedstoneParadox, a hobbyist programmer from a place that hopefully exists.<br><br>
+          I started out modding minecraft way back in 2017 and since then, I've made several mods for a few different games along with a number of other programming projects, including a bit of game dev.<br><br>
+          I've also dabbled a bit in making music with tools like VCV Rack.<br><br>
+          As you can see, my website is a bit barebones at the moment; come back in the future and there will be more to see here, I promise!<br><br>
+          In the meantime, my social links are down below and the link to my maven is up top. Thanks for visiting!
         </p>
       </div>
       <div class="one-half column">
@@ -108,13 +94,12 @@
     </div>
   </div>
 </div>
-<div class="row footer", id="footer">
+<footer class="row">
   <div class="container">
     <div class="six columns", style="margin-top: 5%;">
       <p>
         &copy; RedstoneParadox 2024<br><br> 
         The Redstone Torch is a Copyright of Mojang studios, who have not authorized or endorsed the operation of this site.<br><br>
-        All social media icons are Copyright of their respective owners.
       </p>
     </div>
     <div class="six columns", style="margin-top: 5%;">
@@ -128,7 +113,7 @@
       </div>
     </div>
   </div>
-</div>
+</footer>
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
