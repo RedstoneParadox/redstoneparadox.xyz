@@ -1,10 +1,12 @@
 function toggleDarkMode() {
-  var header = document.querySelector("#header")
-  var footer = document.querySelector("#footer")
+  var header_top = document.querySelector(".header-top")
+  var header_nav = document.querySelector(".header-bottom")
+  var footer = document.querySelector("footer")
   var body = document.body
   var nav_links  = document.querySelectorAll(".nav-link")
 
-  header.classList.toggle("dark-mode")
+  header_top.classList.toggle("dark-mode")
+  header_nav.classList.toggle("dark-mode")
   footer.classList.toggle("dark-mode")
   body.classList.toggle("dark-mode")
   nav_links[0].classList.toggle("dark-mode")
