@@ -11,9 +11,6 @@ body {
     padding-right: 1%;
     padding-top: 8px;
     padding-bottom: 8px;
-}
-
-.header-top-section {
     height: 24px;
     max-height: 24px;
     min-height: 24px;
@@ -38,6 +35,7 @@ footer {
     width: 20px;
     height: 20px;
     padding: 2px;
+    margin-left: auto;
 }
 .theme-button:hover {
     background-color: #b4b8bf;
@@ -117,7 +115,7 @@ footer {
 
 /* Larger than tablet */
 @media (min-width: 750px) {
-    .header-top-section {
+    .header-top {
         height: 48px;
         max-height: 48px;
         min-height: 48px;
