@@ -49,6 +49,8 @@ header {
     height: 20px;
     margin-left: auto;
     display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 .theme-button:hover {
     background-color: #b4b8bf;
