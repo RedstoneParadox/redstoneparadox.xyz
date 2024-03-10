@@ -112,13 +112,13 @@ footer {
 /* Larger than tablet */
 @media (min-width: 750px) {
     .header-top {
-        height: 48px;
-        max-height: 48px;
-        min-height: 48px;
+        height: 32px;
+        max-height: 32px;
+        min-height: 32px;
     }
     .site-icon {
-        width: 48px;
-        height: 48px;
+        width: 32px;
+        height: 32px;
     }
     .theme-button {
         border-radius: 50%;
@@ -135,12 +135,21 @@ footer {
 }
 /* Larger than desktop */
 @media (min-width: 1000px) {
+    .header-top {
+        height: 48px;
+        max-height: 48px;
+        min-height: 48px;
+    }
     .header-nav {
         height: 42px;
     }
     .nav-link {
         font-size: x-large;
         width: 96px;
+    }
+    .site-icon {
+        width: 48px;
+        height: 48px;
     }
     .site-name {
         font-size: x-large;
