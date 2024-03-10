@@ -13,6 +13,12 @@ body {
     padding-bottom: 8px;
 }
 
+.header-top-section {
+    height: 24px;
+    max-height: 24px;
+    min-height: 24px;
+}
+
 .header-nav {
     background-color: #c5c8d6;
     color: #222;
@@ -29,8 +35,8 @@ footer {
 
 .theme-button {
     border-radius: 50%;
-    width: 16px;
-    height: 16px;
+    width: 20px;
+    height: 20px;
     padding: 2px;
 }
 .theme-button:hover {
@@ -69,8 +75,8 @@ footer {
     font-weight: 600;
 }
 .site-icon {
-    width: 16px;
-    height: 16px;
+    width: 24px;
+    height: 24px;
     border-radius: 50%;
     background-color: #ebedf2;
 }
@@ -90,6 +96,13 @@ footer {
 }
 
 @media (width < 750px) {
+    .header-top-left {
+        width: 50%;
+        float: left;
+    }
+    .header-top-right {
+        width: 50%;
+    }
     h4 {
         font-weight:500;
     }
@@ -97,6 +110,11 @@ footer {
 
 /* Larger than tablet */
 @media (min-width: 750px) {
+    .header-top-section {
+        height: 48px;
+        max-height: 48px;
+        min-height: 48px;
+    }
     .site-icon {
         width: 48px;
         height: 48px;

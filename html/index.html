@@ -40,28 +40,15 @@
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<header id="header" class="shadow-4">
+<header class="shadow-4">
   <div class="row header-top">
-    <div class="large-screens-only">
-      <div class="six columns align-center-v">
-        <img src="images/redstone_torch.png" class="site-icon">
-        <span class="site-name">Redstone Paradox</span>
-      </div>
-      <!--Not sure why I have to set the height manually here instead of just doing height:100%, but oh well-->
-      <div class="six columns align-center-v" style="height:48px;">
-        <div class="align-right-h">
-          <a onclick="toggleDarkMode()" class="theme-button">
-            <img src="images/button/dark_mode_FILL0_wght400_GRAD0_opsz24.svg" class="theme-icon">
-          </a>
-        </div>
-      </div>
+    <div class="six columns align-center-v header-top-section header-top-left">
+      <img src="images/redstone_torch.png" class="site-icon">
+      <span class="site-name">Redstone Paradox</span>
     </div>
-    <div class="small-screens-only">
-      <div style="width: 60%;float: left;">
-        <img src="images/redstone_torch.png" class="site-icon">
-        <span class="site-name">Redstone Paradox</span>
-      </div>
-      <div class="align-right-h" style="width: 40%;">
+    <!--Not sure why I have to set the height manually here instead of just doing height:100%, but oh well-->
+    <div class="six columns align-center-v header-top-section header-top-right">
+      <div class="align-right-h">
         <a onclick="toggleDarkMode()" class="theme-button">
           <img src="images/button/dark_mode_FILL0_wght400_GRAD0_opsz24.svg" class="theme-icon">
         </a>
