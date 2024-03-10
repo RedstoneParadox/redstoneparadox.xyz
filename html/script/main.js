@@ -5,6 +5,7 @@ function toggleDarkMode() {
   var body = document.body
   var navLinks = document.querySelectorAll(".nav-link")
   var themeButton = document.querySelector(".theme-button")
+  var siteIcon = document.querySelector(".site-icon")
 
   headerTop.classList.toggle("dark-mode")
   headerNav.classList.toggle("dark-mode")
@@ -13,6 +14,7 @@ function toggleDarkMode() {
   navLinks[0].classList.toggle("dark-mode")
   navLinks[1].classList.toggle("dark-mode")
   themeButton.classList.toggle("dark-mode")
+  siteIcon.classList.toggle("dark-mode")
 
   var themeIcon = document.querySelector(".theme-icon")
   themeIcon.classList.toggle("dark-mode")

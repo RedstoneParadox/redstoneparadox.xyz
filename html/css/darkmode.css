@@ -34,3 +34,7 @@ footer.dark-mode {
         background-color: #545659;
     }
 }
+
+.site-icon.dark-mode {
+    background-color: #232326;
+}
