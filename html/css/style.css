@@ -64,6 +64,7 @@ header {
     width: 20px;
     height: 20px;
     margin: auto;
+    filter: invert(5%) sepia(2%) saturate(3521%) hue-rotate(197deg) brightness(105%) contrast(81%);
 }
 
 .header-nav {

@@ -14,11 +14,13 @@ body.dark-mode {
 .theme-button.dark-mode:hover {
     background-color: #545659;
 }
-
 @media (hover: none) {
     .theme-button.dark-mode {
         background-color: #545659;
     }
+}
+.theme-icon.dark-mode {
+    filter: invert(91%) sepia(2%) saturate(68%) hue-rotate(316deg) brightness(95%) contrast(102%);
 }
 
 .header-nav.dark-mode {
