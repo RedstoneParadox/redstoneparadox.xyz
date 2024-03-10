@@ -95,6 +95,7 @@ footer {
     display: contents;
 }
 
+/* Smaller than tablet */
 @media (width < 750px) {
     .header-top-left {
         width: 50%;
@@ -105,6 +106,12 @@ footer {
     }
     h4 {
         font-weight:500;
+    }
+}
+
+@media (hover: none) {
+    .theme-button {
+        background-color: #b4b8bf;
     }
 }
 

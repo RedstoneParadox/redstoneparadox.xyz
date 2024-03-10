@@ -28,3 +28,9 @@ footer.dark-mode {
 .theme-button.dark-mode:hover {
     background-color: #545659;
 }
+
+@media (hover: none) {
+    .theme-button.dark-mode {
+        background-color: #545659;
+    }
+}
