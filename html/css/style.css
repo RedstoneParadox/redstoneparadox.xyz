@@ -88,6 +88,12 @@ footer {
 .social-icon:hover {
     filter: invert(99%) sepia(8%) saturate(1011%) hue-rotate(178deg) brightness(99%) contrast(91%);
 }
+.social-icon-box {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
 
 .large-screens-only {
     display: none;
