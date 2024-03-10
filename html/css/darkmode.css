@@ -3,28 +3,14 @@ body.dark-mode {
     background-color: #232326;
 }
 
-.header-nav.dark-mode {
-    color: #dedede;
-    background-color: #383a3d;
-}
-
 .header-top.dark-mode {
     color: #dedede;
     background-color: #3d3e42;
     border-bottom: 1px solid #545659;
 }
-
-footer.dark-mode {
-    color: #dedede;
-    border-color: #3d3e40;
-    background-color: #2c2c2e;
+.site-icon.dark-mode {
+    background-color: #232326;
 }
-
-.nav-link.dark-mode:hover {
-    background-color: #545659;
-    color: white;
-}
-
 .theme-button.dark-mode:hover {
     background-color: #545659;
 }
@@ -35,6 +21,16 @@ footer.dark-mode {
     }
 }
 
-.site-icon.dark-mode {
-    background-color: #232326;
+.header-nav.dark-mode {
+    color: #dedede;
+    background-color: #383a3d;
+}
+.nav-link.dark-mode:hover {
+    background-color: #545659;
+    color: white;
+}
+footer.dark-mode {
+    color: #dedede;
+    border-color: #3d3e40;
+    background-color: #2c2c2e;
 }
