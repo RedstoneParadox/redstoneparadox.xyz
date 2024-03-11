@@ -44,3 +44,5 @@ jobs:
       - name: Update Build Number variable
         shell: bash
         run: gh variable set BUILD_NUMBER -b $(expr ${{ vars.BUILD_NUMBER}} + 1)
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
