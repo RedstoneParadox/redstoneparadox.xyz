@@ -4,8 +4,28 @@ html, body {
     flex-direction: column;
 }
 body {
-    background-color: #ebedf2;
-    color: #222;
+    --site-background-color: #ebedf2;
+    --text-color: #222;
+    --hover-background-color: #b4b8bf;
+    --header-top-color: #cacedb;
+    --header-top-border-color: #b4b8bf;
+    --header-nav-color: #c5c8d6;
+    --footer-color: #dfe2eb;
+    --footer-border-color: #c2c5cc;
+    --theme-icon-color: invert(5%) sepia(2%) saturate(3521%) hue-rotate(197deg) brightness(105%) contrast(81%);
+    background-color: var(--site-background-color);
+    color: var(--text-color);
+}
+.dark {
+    --site-background-color: #232326;
+    --text-color: #dedede;
+    --hover-background-color: #545659;
+    --header-top-color: #3d3e42;
+    --header-top-border-color: #545659;
+    --header-nav-color: #383a3d;
+    --footer-color: #2c2c2e;
+    --footer-border-color: #3d3e40;
+    --theme-icon-color: invert(91%) sepia(2%) saturate(68%) hue-rotate(316deg) brightness(95%) contrast(102%);
 }
 
 header {
@@ -16,9 +36,9 @@ header {
 }
 
 .header-top {
-    background-color: #cacedb;
-    color: #222;
-    border-bottom: 1px solid #b4b8bf;
+    background-color: var(--header-top-color);
+    color: var(--text-color);
+    border-bottom: 1px solid var(--header-top-border-color);
     padding-left: 2%;
     padding-right: 2%;
     padding-top: 8px;
@@ -41,7 +61,7 @@ header {
     width: 24px;
     height: 24px;
     border-radius: 50%;
-    background-color: #ebedf2;
+    background-color: var(--site-background-color);
 }
 .theme-button {
     border-radius: 50%;
@@ -53,23 +73,22 @@ header {
     margin-bottom: auto;
 }
 .theme-button:hover {
-    background-color: #b4b8bf;
+    background-color: var(--hover-background-color);
 }
 @media (hover: none) {
     .theme-button {
-        background-color: #b4b8bf;
+        background-color: var(--hover-background-color);
     }
 }
 .theme-icon {
     width: 20px;
     height: 20px;
     margin: auto;
-    filter: invert(5%) sepia(2%) saturate(3521%) hue-rotate(197deg) brightness(105%) contrast(81%);
+    filter: var(--theme-icon-color)
 }
 
 .header-nav {
-    background-color: #c5c8d6;
-    color: #222;
+    background-color: var(--header-nav-color);
     height: 32px;
     display: flex;
     flex-direction: row;
@@ -88,7 +107,7 @@ header {
     border-bottom: 2px solid #b37d7d;
 }
 .nav-link:hover {
-    background-color: #b4b8bf;
+    background-color: var(--hover-background-color);
     color: #ebedf2;
 }
 
@@ -96,9 +115,8 @@ footer {
     width: 100%;
     margin-top: 5%;
     flex-grow: 1;
-    border-top: 1px solid #c2c5cc;
-    background-color: #dfe2eb;
-    color: #222;
+    border-top: 1px solid var(--footer-border-color);
+    background-color: var(--footer-color);
 }
 .social-icon {
     filter: invert(56%) sepia(23%) saturate(508%) hue-rotate(314deg) brightness(93%) contrast(89%);
