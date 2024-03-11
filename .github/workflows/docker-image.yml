@@ -38,5 +38,9 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ steps.meta.outputs.tags }}
+          tags: build.${{ vars.BUILD_NUMBER }}
           labels: ${{ steps.meta.outputs.labels }}
+
+      - name: Update Build Number variable
+        shell: bash
+        run: gh variable set BUILD_NUMBER -b $(expr ${{ vars.BUILD_NUMBER}} + 1)

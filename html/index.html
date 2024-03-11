@@ -23,8 +23,6 @@
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/darkmode.css">
-  <link rel="stylesheet" href="css/shadows.css">
-  <link rel="stylesheet" href="css/align.css">
   
 
   <!-- Favicon
@@ -40,76 +38,50 @@
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<header id="header" class="shadow-4">
+<header>
   <div class="row header-top">
-    <div class="large-screens-only">
-      <div class="six columns align-center-v">
-        <img src="images/redstone_torch.png" class="site-icon">
-        <span class="site-name">Redstone Paradox</span>
-      </div>
-      <!--Not sure why I have to set the height manually here instead of just doing height:100%, but oh well-->
-      <div class="six columns align-center-v" style="height:48px;">
-        <div class="align-right-h">
-          <a onclick="toggleDarkMode()" class="theme-button">
-            <img src="images/button/dark_mode_FILL0_wght400_GRAD0_opsz24.svg"  class="theme-icon" id="themeIcon">
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="small-screens-only">
-      <div style="width: 60%;float: left;">
-        <img src="images/redstone_torch.png" class="site-icon">
-        <span class="site-name">Redstone Paradox</span>
-      </div>
-      <div class="align-right-h" style="width: 40%;">
-        <a onclick="toggleDarkMode()" class="theme-button">
-          <img src="images/button/dark_mode_FILL0_wght400_GRAD0_opsz24.svg"  class="theme-icon" id="themeIcon">
-        </a>
-      </div>
-    </div>
+    <img src="images/redstone_torch.png" class="site-icon">
+    <span class="site-name">Redstone Paradox</span>
+    <a onclick="toggleDarkMode()" class="theme-button">
+      <img src="images/button/dark_mode_FILL0_wght400_GRAD0_opsz24.svg" class="theme-icon">
+    </a>
   </div>
   <div class="row header-nav">
-    <div class="align-center-h">
-      <div class="align-center-v">
-        <a href="" class="nav-link selected">Home</a>
-        <a href="https://maven.redstoneparadox.xyz" class="nav-link">Maven</a>
-      </div>
-    </div>
+    <a href="" class="nav-link selected">Home</a>
+    <a href="https://maven.redstoneparadox.xyz" class="nav-link">Maven</a>
   </div>
 </header>
-  <div class="row" style="margin-top: 5%;">
-    <div class="container">
-      <div class="one-half column">
-        <h4 style="color: #b37d7d;">Welcome to my Website!</h4>
-        <p>
-          I am RedstoneParadox, a hobbyist programmer from a place that hopefully exists.<br><br>
-          I started out modding minecraft way back in 2017 and since then, I've made several mods for a few different games along with a number of other programming projects, including a bit of game dev.<br><br>
-          I've also dabbled a bit in making music with tools like VCV Rack.<br><br>
-          As you can see, my website is a bit barebones at the moment; come back in the future and there will be more to see here, I promise!<br><br>
-          In the meantime, my social links are down below and the link to my maven is up top. Thanks for visiting!
-        </p>
-      </div>
-      <div class="one-half column">
-      </div>
+<div class="row" style="margin-top: 5%;">
+  <div class="container">
+    <div class="one-half column">
+      <h4 style="color: #b37d7d;">Welcome to my Website!</h4>
+      <p>
+        I am RedstoneParadox, a hobbyist programmer from a place that hopefully exists.<br><br>
+        I started out modding minecraft way back in 2017 and since then, I've made several mods for a few different games along with a number of other programming projects, including a bit of game dev.<br><br>
+        I've also dabbled a bit in making music with tools like VCV Rack.<br><br>
+        As you can see, my website is a bit barebones at the moment; come back in the future and there will be more to see here, I promise!<br><br>
+        In the meantime, my social links are down below and the link to my maven is up top. Thanks for visiting!
+      </p>
+    </div>
+    <div class="one-half column">
     </div>
   </div>
 </div>
 <footer class="row">
   <div class="container">
-    <div class="six columns", style="margin-top: 5%;">
+    <div class="six columns" style="margin-top: 5%;">
       <p>
-        &copy; RedstoneParadox 2024<br><br> 
-        The Redstone Torch is a Copyright of Mojang studios, who have not authorized or endorsed the operation of this site.<br><br>
+        <span style="font-weight: 700;">Copyright &copy; RedstoneParadox 2024<br><br> </span>
+        The Redstone Torch is a Copyright of Mojang AB, who have not authorized or endorsed the operation of this site.<br><br>
+        All logos used on this site are property of their respective owners.
       </p>
     </div>
-    <div class="six columns", style="margin-top: 5%;">
-      <div class="row">
-        <div style="width: fit-content;margin-left: auto;margin-right: auto;">
-          <a href="https://github.com/RedstoneParadox"><img src="images/social/github.svg" class="social-icon" style="width:28px;height:28px;margin: 8px;"></a>
-          <a href="https://www.youtube.com/@redstoneparadox"><img src="images/social/youtube.svg" class="social-icon" style="width:28px;height:28px;margin: 8px;"></a>
-          <a href="https://modrinth.com/user/RedstoneParadox"><img src="images/social/modrinth.svg" class="social-icon" style="width:28px;height:28px;margin: 8px;"></a>
-          <a href="https://discord.gg/crZpcjtdJR"><img src="images/social/discord.svg" class="social-icon" style="width:28px;height:28px;margin: 8px;"></a>
-        </div>
+    <div class="six columns" style="margin-top: 5%;">
+      <div class="row social-icon-box">
+        <a href="https://github.com/RedstoneParadox"><img src="images/social/github.svg" class="social-icon" style="width:28px;height:28px;margin: 8px;"></a>
+        <a href="https://www.youtube.com/@redstoneparadox"><img src="images/social/youtube.svg" class="social-icon" style="width:28px;height:28px;margin: 8px;"></a>
+        <a href="https://modrinth.com/user/RedstoneParadox"><img src="images/social/modrinth.svg" class="social-icon" style="width:28px;height:28px;margin: 8px;"></a>
+        <a href="https://discord.gg/crZpcjtdJR"><img src="images/social/discord.svg" class="social-icon" style="width:28px;height:28px;margin: 8px;"></a>
       </div>
     </div>
   </div>
