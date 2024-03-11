@@ -7,6 +7,7 @@ on:
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
+  BUILD_NUMBER: ${{ vars.BUILD_NUMBER }}
 
 jobs:
   build-and-push-image:
@@ -38,7 +39,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: build.${{ vars.BUILD_NUMBER }}
+          tags: build.${{ env.BUILD_NUMBER }}
           labels: ${{ steps.meta.outputs.labels }}
 
       - name: Update Build Number variable
