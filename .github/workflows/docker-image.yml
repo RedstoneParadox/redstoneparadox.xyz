@@ -46,4 +46,4 @@ jobs:
         shell: bash
         run: gh variable set BUILD_NUMBER -b $(expr ${{ vars.BUILD_NUMBER }} + 1)
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.FULL_ACCESS }}
