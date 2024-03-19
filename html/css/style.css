@@ -7,8 +7,6 @@ body {
     --site-background-color: #e6ebed;
     --site-secondary-color: #dce2e3;
     --site-tertiary-color: #d0d9d9;
-    --site-alt-background-color: #22222e;
-    --site-alt-secondary-color: #393c4d;
     --site-alt-tertiary-color: #485063;
     --hover-background-color: #b0bfbf;
     --text-color: #222;
@@ -19,11 +17,9 @@ body {
     color: var(--text-color);
 }
 .dark {
-    --site-background-color: #22222e;
+    --site-background-color: #333645;
     --site-secondary-color: #393c4d;
     --site-tertiary-color: #485063;
-    --site-alt-background-color: #e6ebed;
-    --site-alt-secondary-color: #dce2e3;
     --site-alt-tertiary-color: #d0d9d9;
     --hover-background-color: #5b657d;
     --text-color: #dedede;
