@@ -11,6 +11,7 @@ body {
     --text-color: #222;
     --accent-color: #b37d7d;
     --theme-icon-color: invert(5%) sepia(2%) saturate(3521%) hue-rotate(197deg) brightness(105%) contrast(81%);
+    --theme-icon-margin: 0px;
     background-color: var(--site-background-color);
     color: var(--text-color);
 }
@@ -21,6 +22,7 @@ body {
     --hover-background-color: #879494;
     --text-color: #dedede;
     --theme-icon-color: invert(91%) sepia(2%) saturate(68%) hue-rotate(316deg) brightness(95%) contrast(102%);
+    --theme-icon-margin: 24px;
 }
 
 .header-top {
@@ -52,17 +54,23 @@ body {
     border-radius: 50%;
     background-color: var(--site-background-color);
 }
+.theme-button-box {
+    width: 48px;
+    height: 24px;
+    display: block;
+    border: 2px solid var(--accent-color);
+    border-radius: 16px;
+}
 .theme-button {
     border-radius: 50%;
-    width: 24px;
+    max-width: 24px;
     height: 24px;
-    margin-left: auto;
-    display: flex;
-    margin-top: auto;
-    margin-bottom: auto;
+    display: block;
+    margin-left: var(--theme-icon-margin);
 }
 .theme-button:hover {
     background-color: var(--hover-background-color);
+    display: block;
 }
 @media (hover: none) {
     .theme-button {
@@ -72,7 +80,6 @@ body {
 .theme-icon {
     width: 20px;
     height: 20px;
-    margin: auto;
     filter: var(--theme-icon-color)
 }
 
@@ -146,14 +153,6 @@ h4 {
     .site-name {
         font-size: large;
     }
-    .theme-button {
-        width: 32px;
-        height: 32px;
-    }
-    .theme-icon {
-        width: 24px;
-        height: 24px;
-    }
 }
 /* Larger than desktop */
 @media (min-width: 1000px) {
@@ -168,14 +167,6 @@ h4 {
     }
     .site-name {
         font-size: x-large;
-    }
-    .theme-button {
-        width: 40px;
-        height: 40px;
-    }
-    .theme-icon {
-        width: 32px;
-        height: 32px;
     }
 
     .header-nav {
