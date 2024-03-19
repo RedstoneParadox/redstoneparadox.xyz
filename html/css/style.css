@@ -78,7 +78,7 @@ button.theme-button {
     max-height: 24px;
     border-radius: 50%;
     margin-left: var(--theme-icon-margin);
-    margin-right: 4px;
+    margin-right: 2px;
     background-color: var(--accent-color);
 }
 .theme-icon {
