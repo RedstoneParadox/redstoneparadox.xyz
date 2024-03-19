@@ -4,8 +4,8 @@ html, body {
     flex-direction: column;
 }
 body {
-    --site-background-color: #dce1e3;
-    --site-secondary-color: #d7ddde;
+    --site-background-color: #e6ebed;
+    --site-secondary-color: #dce2e3;
     --site-tertiary-color: #d2d9d9;
     --site-alt-background-color: #22222e;
     --site-alt-secondary-color: #393c4d;
@@ -22,8 +22,8 @@ body {
     --site-background-color: #22222e;
     --site-secondary-color: #393c4d;
     --site-tertiary-color: #485063;
-    --site-alt-background-color: #dce1e3;
-    --site-alt-secondary-color: #d7ddde;
+    --site-alt-background-color: #e6ebed;
+    --site-alt-secondary-color: #dce2e3;
     --site-alt-tertiary-color: #d2d9d9;
     --hover-background-color: #879494;
     --text-color: #dedede;
@@ -64,7 +64,7 @@ body {
 button.theme-toggle {
     border-radius: 16px;
     border: 2px solid var(--accent-color);
-    background-color: var(--site-alt-secondary-color);
+    background-color: var(--site-alt-tertiary-color);
     min-width: 60px;
     height: 32px;
     padding: 0;
