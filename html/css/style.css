@@ -60,8 +60,8 @@ body {
     border-radius: 50%;
     background-color: var(--site-background-color);
 }
-.button.theme-button,
-button.theme-button {
+.button.theme-toggle,
+button.theme-toggle {
     border-radius: 16px;
     border: 2px solid var(--accent-color);
     background-color: var(--site-alt-secondary-color);
@@ -72,7 +72,7 @@ button.theme-button {
     margin-left: auto;
     margin-top: auto;
 }
-.theme-icon-box {
+.theme-toggle-thumb {
     display: block;
     max-width: 24px;
     max-height: 24px;
