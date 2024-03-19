@@ -7,6 +7,8 @@ body {
     --site-background-color: #dce1e3;
     --site-secondary-color: #d7ddde;
     --site-tertiary-color: #d2d9d9;
+    --site-alt-secondary-color: #393c4d;
+    --site-alt-tertiary-color: #485063;
     --hover-background-color: #879494;
     --text-color: #222;
     --accent-color: #b37d7d;
@@ -19,6 +21,8 @@ body {
     --site-background-color: #22222e;
     --site-secondary-color: #393c4d;
     --site-tertiary-color: #485063;
+    --site-alt-secondary-color: #d7ddde;
+    --site-alt-tertiary-color: #d2d9d9;
     --hover-background-color: #879494;
     --text-color: #dedede;
     --theme-icon-color: invert(91%) sepia(2%) saturate(68%) hue-rotate(316deg) brightness(95%) contrast(102%);
@@ -54,33 +58,32 @@ body {
     border-radius: 50%;
     background-color: var(--site-background-color);
 }
-.theme-button-box {
-    width: 48px;
-    height: 24px;
-    display: block;
-    border: 2px solid var(--accent-color);
+.button.theme-button,
+button.theme-button {
     border-radius: 16px;
+    border: 2px solid var(--accent-color);
+    background-color: var(--site-alt-secondary-color);
+    min-width: 48px;
+    height: 28px;
+    padding: 0;
+    display: block;
+    margin-left: auto;
+    margin-top: auto;
 }
-.theme-button {
-    border-radius: 50%;
-    max-width: 24px;
+.theme-icon-box {
+    display: block;
+    width: 24px;
     height: 24px;
-    display: block;
+    padding: 0%;
+    border-radius: 50%;
     margin-left: var(--theme-icon-margin);
-}
-.theme-button:hover {
-    background-color: var(--hover-background-color);
-    display: block;
-}
-@media (hover: none) {
-    .theme-button {
-        background-color: var(--hover-background-color);
-    }
+    background-color: var(--site-alt-tertiary-color);
 }
 .theme-icon {
     width: 20px;
     height: 20px;
-    filter: var(--theme-icon-color)
+    filter: var(--theme-icon-color);
+    border-radius: 50%;
 }
 
 .header-nav {
