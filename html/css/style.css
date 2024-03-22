@@ -7,6 +7,7 @@ body {
     --site-background-color: #e6ebed;
     --site-secondary-color: #dce2e3;
     --site-tertiary-color: #d0d9d9;
+    --site-alt-background-color: #333645;
     --site-alt-tertiary-color: #485063;
     --hover-background-color: #b0bfbf;
     --text-color: #222;
@@ -20,6 +21,7 @@ body {
     --site-background-color: #333645;
     --site-secondary-color: #393c4d;
     --site-tertiary-color: #485063;
+    --site-alt-background-color: #e6ebed;
     --site-alt-tertiary-color: #d0d9d9;
     --hover-background-color: #5b657d;
     --text-color: #dedede;
@@ -59,27 +61,28 @@ body {
 .button.theme-toggle,
 button.theme-toggle {
     border: 1px solid var(--accent-color);
-    border-radius: 0%;
-    background-color: var(--site-alt-tertiary-color);
-    min-width: 64px;
-    height: 32px;
+    border-radius: 12px;
+    background-color: var(--site-background-color);
+    min-width: 48px;
+    height: 24px;
     padding: 0%;
     display: block;
     margin-left: auto;
     margin-top: auto;
 }
 .theme-toggle-thumb {
-    display: block;
-    max-width: 28px;
-    max-height: 28px;
+    display: grid;
+    width: 18px;
+    height: 18px;
+    border-radius: 9px;
     margin-right: 2px;
+    place-items: center;
     margin-left: var(--theme-icon-margin);
-    background-color: var(--accent-color);
+    background-color: var(--site-alt-tertiary-color);
 }
 .theme-icon {
-    width: 20px;
-    height: 20px;
-    margin: 4px;
+    width: 12px;
+    height: 12px;
     filter: var(--theme-icon-color);
 }
 
