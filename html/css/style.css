@@ -58,28 +58,27 @@ body {
 }
 .button.theme-toggle,
 button.theme-toggle {
-    border-radius: 16px;
-    border: 2px solid var(--accent-color);
+    border: 1px solid var(--accent-color);
+    border-radius: 0%;
     background-color: var(--site-alt-tertiary-color);
-    min-width: 60px;
+    min-width: 64px;
     height: 32px;
-    padding: 0;
+    padding: 0%;
     display: block;
     margin-left: auto;
     margin-top: auto;
 }
 .theme-toggle-thumb {
     display: block;
-    max-width: 24px;
-    max-height: 24px;
-    border-radius: 50%;
-    margin-left: var(--theme-icon-margin);
+    max-width: 28px;
+    max-height: 28px;
     margin-right: 2px;
+    margin-left: var(--theme-icon-margin);
     background-color: var(--accent-color);
 }
 .theme-icon {
-    width: 16px;
-    height: 16px;
+    width: 20px;
+    height: 20px;
     margin: 4px;
     filter: var(--theme-icon-color);
 }
