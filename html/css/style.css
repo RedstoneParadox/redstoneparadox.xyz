@@ -18,9 +18,9 @@ body {
     color: var(--text-color);
 }
 .dark {
-    --site-background-color: #1c1e26;
-    --site-secondary-color: #262833;
-    --site-tertiary-color: #2f3440;
+    --site-background-color: #2f3840;
+    --site-secondary-color: #39414d;
+    --site-tertiary-color: #414b59;
     --site-alt-background-color: #e6ebed;
     --site-alt-tertiary-color: #d0d9d9;
     --hover-background-color: #5b657d;
@@ -30,7 +30,7 @@ body {
 }
 
 .header-top {
-    background-color: var(--site-secondary-color);
+    background-color: var(--site-tertiary-color);
     color: var(--text-color);
     padding-left: 2%;
     padding-right: 2%;
@@ -56,7 +56,7 @@ body {
 }
 .button.theme-toggle,
 button.theme-toggle {
-    border: 2px solid var(--site-tertiary-color);
+    border: 2px solid var(--site-secondary-color);
     border-radius: 12px;
     background-color: var(--site-background-color);
     width: 48px;
@@ -112,7 +112,7 @@ button.theme-toggle {
 }
 
 .header-nav {
-    background-color: var(--site-tertiary-color);
+    background-color: var(--site-secondary-color);
     height: 32px;
     display: flex;
     flex-direction: row;
