@@ -63,6 +63,8 @@ button.theme-toggle {
     height: 24px;
     padding: 0%;
     margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 .theme-toggle-thumb {
     display: grid;
