@@ -7,8 +7,8 @@ body {
     --site-background-color: #e6ebed;
     --site-secondary-color: #dce2e3;
     --site-tertiary-color: #d0d9d9;
-    --site-alt-background-color: #333645;
-    --site-alt-tertiary-color: #485063;
+    --site-alt-background-color: #1c1e26;
+    --site-alt-tertiary-color: #2f3440;
     --hover-background-color: #b0bfbf;
     --text-color: #222;
     --accent-color: #b35959;
@@ -18,9 +18,9 @@ body {
     color: var(--text-color);
 }
 .dark {
-    --site-background-color: #333645;
-    --site-secondary-color: #393c4d;
-    --site-tertiary-color: #485063;
+    --site-background-color: #1c1e26;
+    --site-secondary-color: #262833;
+    --site-tertiary-color: #2f3440;
     --site-alt-background-color: #e6ebed;
     --site-alt-tertiary-color: #d0d9d9;
     --hover-background-color: #5b657d;
@@ -30,7 +30,7 @@ body {
 }
 
 .header-top {
-    background-color: var(--site-tertiary-color);
+    background-color: var(--site-secondary-color);
     color: var(--text-color);
     padding-left: 2%;
     padding-right: 2%;
@@ -112,7 +112,7 @@ button.theme-toggle {
 }
 
 .header-nav {
-    background-color: var(--site-secondary-color);
+    background-color: var(--site-tertiary-color);
     height: 32px;
     display: flex;
     flex-direction: row;
