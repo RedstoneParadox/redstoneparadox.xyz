@@ -56,7 +56,7 @@ body {
 }
 .button.theme-toggle,
 button.theme-toggle {
-    border: 1px solid var(--accent-color);
+    border: 2px solid var(--site-tertiary-color);
     border-radius: 12px;
     background-color: var(--site-background-color);
     width: 48px;
@@ -98,12 +98,12 @@ button.theme-toggle {
     }
 
     to {
-        margin-left: 25px;
+        margin-left: 24px;
     }
 }
 @keyframes thumb-move-back {
     from {
-        margin-left: 25px;
+        margin-left: 24px;
     }
 
     to {
