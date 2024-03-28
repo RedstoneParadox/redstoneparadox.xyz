@@ -11,7 +11,7 @@ body {
     --site-alt-tertiary-color: #2f3440;
     --hover-background-color: #b0bfbf;
     --text-color: #222;
-    --accent-color: #b35959;
+    --accent-color: #cc5252;
     --theme-icon-color: invert(97%) sepia(5%) saturate(155%) hue-rotate(152deg) brightness(92%) contrast(95%);;
     --theme-icon-margin: 2px;
     background-color: var(--site-background-color);
