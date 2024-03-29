@@ -15,6 +15,9 @@
 
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
 
   <!-- CSS
@@ -22,8 +25,6 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/darkmode.css">
-  
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -39,22 +40,24 @@
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <header>
-  <div class="row header-top">
+  <div class="header-top">
     <img src="images/redstone_torch.png" class="site-icon">
     <span class="site-name">Redstone Paradox</span>
-    <a onclick="toggleDarkMode()" class="theme-button">
-      <img src="images/button/dark_mode_FILL0_wght400_GRAD0_opsz24.svg" class="theme-icon">
+    <button onclick="toggleDarkMode()" class="theme-toggle" title="Toggle Theme">
+      <div class="theme-toggle-thumb start">
+        <img src="images/theme/sun-fill.svg" class="theme-icon">
+      </button>
     </a>
   </div>
-  <div class="row header-nav">
+  <div class="header-nav">
     <a href="" class="nav-link selected">Home</a>
-    <a href="https://maven.redstoneparadox.xyz" class="nav-link">Maven</a>
+    <a href="https://maven.redstoneparadox.xyz" class="nav-link" target="_blank">Maven</a>
   </div>
 </header>
-<div class="row" style="margin-top: 5%;">
+<div style="margin-top: 5%;">
   <div class="container">
     <div class="one-half column">
-      <h4 style="color: #b37d7d;">Welcome to my Website!</h4>
+      <h4>Welcome to my Website!</h4>
       <p>
         I am RedstoneParadox, a hobbyist programmer from a place that hopefully exists.<br><br>
         I started out modding minecraft way back in 2017 and since then, I've made several mods for a few different games along with a number of other programming projects, including a bit of game dev.<br><br>
@@ -67,7 +70,7 @@
     </div>
   </div>
 </div>
-<footer class="row">
+<footer>
   <div class="container">
     <div class="six columns" style="margin-top: 5%;">
       <p>
@@ -77,7 +80,7 @@
       </p>
     </div>
     <div class="six columns" style="margin-top: 5%;">
-      <div class="row social-icon-box">
+      <div class="social-icon-box">
         <a href="https://github.com/RedstoneParadox"><img src="images/social/github.svg" class="social-icon" style="width:28px;height:28px;margin: 8px;"></a>
         <a href="https://www.youtube.com/@redstoneparadox"><img src="images/social/youtube.svg" class="social-icon" style="width:28px;height:28px;margin: 8px;"></a>
         <a href="https://modrinth.com/user/RedstoneParadox"><img src="images/social/modrinth.svg" class="social-icon" style="width:28px;height:28px;margin: 8px;"></a>
