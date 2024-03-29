@@ -1,2 +1,2 @@
-FROM nginx:mainline-alpine3.18-perl
-COPY html /usr/share/nginx/html
+FROM caddy:2.7.6-alpine
+COPY html /usr/share/caddy
