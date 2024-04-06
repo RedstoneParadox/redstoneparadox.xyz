@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>RedstoneParadox's Site</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/redstone_torch.png">
+
+  <!-- Script
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script type="text/javascript" src="script/main.js"></script>
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<header>
+  <div class="header-top">
+    <img src="images/redstone_torch.png" class="site-icon">
+    <span class="site-name">Redstone Paradox</span>
+    <button onclick="toggleDarkMode()" class="theme-toggle" title="Toggle Theme">
+      <div class="theme-toggle-thumb start">
+        <img src="images/theme/sun-fill.svg" class="theme-icon">
+      </button>
+    </a>
+  </div>
+  <div class="header-nav">
+    <a href="" class="nav-link selected">Home</a>
+    <a href="https://maven.redstoneparadox.xyz" class="nav-link" target="_blank">Maven</a>
+  </div>
+</header>
+<div style="margin-top: 5%;">
+  {% block content %} {% endblock %}
+</div>
+<footer>
+  <div class="container">
+    <div class="six columns" style="margin-top: 5%;">
+      <p>
+        <span style="font-weight: 700;">Copyright &copy; RedstoneParadox 2024<br><br> </span>
+        The Redstone Torch is a Copyright of Mojang AB, who have not authorized or endorsed the operation of this site.<br><br>
+        All logos used on this site are property of their respective owners.
+      </p>
+    </div>
+    <div class="six columns" style="margin-top: 5%;">
+      <div class="social-icon-box">
+        <a href="https://github.com/RedstoneParadox"><img src="images/social/github.svg" class="social-icon" style="width:28px;height:28px;margin: 8px;"></a>
+        <a href="https://www.youtube.com/@redstoneparadox"><img src="images/social/youtube.svg" class="social-icon" style="width:28px;height:28px;margin: 8px;"></a>
+        <a href="https://modrinth.com/user/RedstoneParadox"><img src="images/social/modrinth.svg" class="social-icon" style="width:28px;height:28px;margin: 8px;"></a>
+        <a href="https://discord.gg/crZpcjtdJR"><img src="images/social/discord.svg" class="social-icon" style="width:28px;height:28px;margin: 8px;"></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
