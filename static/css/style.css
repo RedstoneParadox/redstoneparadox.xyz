@@ -169,6 +169,10 @@ project-card {
     border: 2px solid var(--site-tertiary-color);
     border-radius: 8px;
     background-color: var(--site-secondary-color);
+    box-shadow: 0 1px 0px #00000011,
+                0 2px 0px #00000011,
+                0 3px 0px #00000011,
+                0 4px 0px #00000011;
 }
 .project-icon {
     width: 64px;
