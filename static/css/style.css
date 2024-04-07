@@ -145,7 +145,7 @@ footer {
     background-color: var(--site-secondary-color);
 }
 .social-icon {
-    filter: invert(56%) sepia(23%) saturate(508%) hue-rotate(314deg) brightness(93%) contrast(89%);
+    filter: invert(42%) sepia(51%) saturate(632%) hue-rotate(312deg) brightness(92%) contrast(101%);
 }
 .social-icon:hover {
     filter: invert(99%) sepia(8%) saturate(1011%) hue-rotate(178deg) brightness(99%) contrast(91%);
