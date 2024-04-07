@@ -6,6 +6,7 @@
 
 {% block content %}
 {% set data = load_data(path="content/projects/data.json") %}
+<div class="projects-box">
 {% for project in data %}
     <project-card>
         <img src="{{ project["icon"] }}" class="project-icon" /><br/>
@@ -29,4 +30,5 @@
 
     </project-card>
 {% endfor %}
+</div>
 {% endblock content %}

@@ -164,6 +164,7 @@ h4 {
 
 project-card {
     display: block;
+    margin: 16px;
     width: 25%;
     padding: 16px;
     border: 2px solid var(--site-tertiary-color);
@@ -183,6 +184,11 @@ project-card {
 .project-hr {
     border-color: var(--site-tertiary-color);
     margin: 16px;
+}
+.projects-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 /* Smaller than tablet */
