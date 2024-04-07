@@ -1,2 +1,9 @@
+FROM ghcr.io/getzola/zola:v0.17.1 as zola
+
+COPY . /project
+WORKDIR /project
+RUN ["zola", "build"]
+
 FROM caddy:2.7.6-alpine
-COPY public /usr/share/caddy
+WORKDIR /
+COPY --from=zola /project/public /usr/share/caddy
