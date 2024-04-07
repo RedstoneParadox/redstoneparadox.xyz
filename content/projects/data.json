@@ -5,5 +5,12 @@
         "icon": "https://cdn.modrinth.com/data/fJeQl13M/icon.png",
         "github": "https://github.com/RedstoneParadox/Better-Enchantment-Boosting",
         "modrinth": "https://modrinth.com/mod/better-enchantment-boosting"
+    },
+    {
+        "name": "Oak Tree",
+        "desc": "A GUI library for Minecraft Mods",
+        "icon": "",
+        "github": "https://github.com/RedstoneParadox/OakTree",
+        "modrinth": ""
     }
 ]

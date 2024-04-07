@@ -15,12 +15,16 @@
         <hr class="project-hr">
         
         <div class="social-icon-box">
+            {% if project["github"] != "" %}
             <a href={{ project["github"] }}>
                 <img src="{{ get_url(path="images/social/github.svg") | safe }}" class="social-icon" style="width:28px;height:28px;margin: 8px;">
             </a>
+            {% endif %}
+            {% if project["modrinth"] != "" %}
             <a href={{ project["modrinth"] }}>
                 <img src="{{ get_url(path="images/social/modrinth.svg") | safe }}" class="social-icon" style="width:28px;height:28px;margin: 8px;">
             </a>
+            {% endif %}
         </div>
 
     </project-card>
