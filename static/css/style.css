@@ -162,6 +162,25 @@ h4 {
     color: var(--accent-color);
 }
 
+project-card {
+    display: block;
+    width: 25%;
+    padding: 16px;
+    border: 2px solid var(--site-tertiary-color);
+    border-radius: 8px;
+    background-color: var(--site-secondary-color);
+}
+.project-icon {
+    width: 64px;
+    border: 2px solid var(--site-tertiary-color);
+    border-radius: 6px;
+    background-color: var(--site-background-color);
+}
+.project-hr {
+    border-color: var(--site-tertiary-color);
+    margin: 16px;
+}
+
 /* Smaller than tablet */
 @media (width < 750px) {
     h4 {
