@@ -15,7 +15,7 @@
         {{ project["desc"] }}
         <hr class="project-hr">
         
-        <div class="social-icon-box">
+        <div class="social-icon-box", style="margin-top: auto;">
             {% if project["github"] != "" %}
             <a href={{ project["github"] }}>
                 <img src="{{ get_url(path="images/social/github.svg") | safe }}" class="social-icon" style="width:28px;height:28px;margin: 8px;">

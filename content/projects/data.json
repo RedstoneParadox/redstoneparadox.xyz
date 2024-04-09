@@ -9,35 +9,7 @@
     {
         "name": "Oak Tree",
         "desc": "A GUI library for Minecraft Mods",
-        "icon": "",
-        "github": "https://github.com/RedstoneParadox/OakTree",
-        "modrinth": ""
-    },
-    {
-        "name": "Oak Tree",
-        "desc": "A GUI library for Minecraft Mods",
-        "icon": "",
-        "github": "https://github.com/RedstoneParadox/OakTree",
-        "modrinth": ""
-    },
-    {
-        "name": "Oak Tree",
-        "desc": "A GUI library for Minecraft Mods",
-        "icon": "",
-        "github": "https://github.com/RedstoneParadox/OakTree",
-        "modrinth": ""
-    },
-    {
-        "name": "Oak Tree",
-        "desc": "A GUI library for Minecraft Mods",
-        "icon": "",
-        "github": "https://github.com/RedstoneParadox/OakTree",
-        "modrinth": ""
-    },
-    {
-        "name": "Oak Tree",
-        "desc": "A GUI library for Minecraft Mods",
-        "icon": "",
+        "icon": "/images/oak_sapling.png",
         "github": "https://github.com/RedstoneParadox/OakTree",
         "modrinth": ""
     }
