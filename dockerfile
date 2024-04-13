@@ -1,2 +1,9 @@
-FROM --platform=linux/arm64/v8 nginx:mainline-alpine3.18-perl
-COPY html /usr/share/nginx/html
+FROM ghcr.io/getzola/zola:v0.17.1 as zola
+
+COPY . /project
+WORKDIR /project
+RUN ["zola", "build"]
+
+FROM caddy:2.7.6-alpine
+WORKDIR /
+COPY --from=zola /project/public /usr/share/caddy

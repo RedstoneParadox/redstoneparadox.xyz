@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" type="text/css" href="{{ get_url(path="css/card.css") | safe }}">
+{% endblock head %}
+
+{% block content %}
+{% set data = load_data(path="content/projects/data.json") %}
+<div class="projects-box">
+{% for project in data %}
+    <project-card>
+        <img src="{{ project["icon"] }}" class="project-icon" /><br/>
+        <span style="font-weight:700;">{{ project["name"] }}</span><br/>
+        <hr class="project-hr">
+        {{ project["desc"] }}
+        <hr class="project-hr">
+        
+        <div class="social-icon-box">
+            {% if project["github"] != "" %}
+            <a href={{ project["github"] }}>
+                <img src="{{ get_url(path="images/social/github.svg") | safe }}" class="social-icon" style="width:28px;height:28px;margin: 8px;">
+            </a>
+            {% endif %}
+            {% if project["modrinth"] != "" %}
+            <a href={{ project["modrinth"] }}>
+                <img src="{{ get_url(path="images/social/modrinth.svg") | safe }}" class="social-icon" style="width:28px;height:28px;margin: 8px;">
+            </a>
+            {% endif %}
+        </div>
+
+    </project-card>
+{% endfor %}
+</div>
+{% endblock content %}

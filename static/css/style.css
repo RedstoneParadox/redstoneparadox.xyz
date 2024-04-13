@@ -125,7 +125,8 @@ button.theme-toggle {
     text-decoration: none;
     color: var(--accent-color);
     display: block;
-    width: 66px;
+    padding-left: 10px;
+    padding-right: 10px;
     text-align: center;
     height: auto;
 }
@@ -144,7 +145,7 @@ footer {
     background-color: var(--site-secondary-color);
 }
 .social-icon {
-    filter: invert(56%) sepia(23%) saturate(508%) hue-rotate(314deg) brightness(93%) contrast(89%);
+    filter: invert(42%) sepia(51%) saturate(632%) hue-rotate(312deg) brightness(92%) contrast(101%);
 }
 .social-icon:hover {
     filter: invert(99%) sepia(8%) saturate(1011%) hue-rotate(178deg) brightness(99%) contrast(91%);
@@ -159,6 +160,35 @@ footer {
 h4 {
     font-family: "Roboto", sans-serif;
     color: var(--accent-color);
+}
+
+project-card {
+    display: block;
+    margin: 16px;
+    width: 25%;
+    padding: 16px;
+    border: 2px solid var(--site-tertiary-color);
+    border-radius: 8px;
+    background-color: var(--site-secondary-color);
+    box-shadow: 0 1px 0px #00000011,
+                0 2px 0px #00000011,
+                0 3px 0px #00000011,
+                0 4px 0px #00000011;
+}
+.project-icon {
+    width: 64px;
+    border: 2px solid var(--site-tertiary-color);
+    border-radius: 6px;
+    background-color: var(--site-background-color);
+}
+.project-hr {
+    border-color: var(--site-tertiary-color);
+    margin: 16px;
+}
+.projects-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 /* Smaller than tablet */
