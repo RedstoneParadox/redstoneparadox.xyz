@@ -7,14 +7,13 @@ on:
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
+  BUILD_NUMBER: ${{ vars.BUILD_NUMBER }}
 
 jobs:
   build-and-push-image:
     
       runs-on: ubuntu-latest
-      permissions:
-        contents: read
-        packages: write
+      permissions: write-all
 
       steps:
       - name: Checkout repository
@@ -35,12 +34,16 @@ jobs:
 
       - name: Build and push Docker image
         uses: docker/build-push-action@f2a1d5e99d037542a71f64918e516c093c6f3fc4
+        env:
+          BUILD_NUMBER: ${{ vars.BUILD_NUMBER }}
         with:
           context: .
           push: true
-          tags: build.${{ vars.BUILD_NUMBER }}
+          tags: ${{ steps.meta.outputs.tags }}-build.${{ env.BUILD_NUMBER }}
           labels: ${{ steps.meta.outputs.labels }}
 
       - name: Update Build Number variable
         shell: bash
-        run: gh variable set BUILD_NUMBER -b $(expr ${{ vars.BUILD_NUMBER}} + 1)
+        run: gh variable set BUILD_NUMBER -b $(expr ${{ vars.BUILD_NUMBER }} + 1)
+        env:
+          GITHUB_TOKEN: ${{ secrets.FULL_ACCESS }}
