@@ -2,13 +2,13 @@
     {
         "name": "Better Enchantment Boosting",
         "desc": "Makes bookshelves boost enchantment tables from farther away, among other things",
-        "icon": "https://cdn.modrinth.com/data/fJeQl13M/icon.png",
+        "icon": "/images/enchanting_table.webp",
         "github": "https://github.com/RedstoneParadox/Better-Enchantment-Boosting",
         "modrinth": "https://modrinth.com/mod/better-enchantment-boosting"
     },
     {
         "name": "Oak Tree",
-        "desc": "A GUI library for Minecraft Mods",
+        "desc": "A GUI library for Minecraft Mods that aims to be as simple to use as possible",
         "icon": "/images/oak_sapling.png",
         "github": "https://github.com/RedstoneParadox/OakTree",
         "modrinth": ""
