@@ -112,11 +112,9 @@ button.theme-toggle {
 }
 
 .header-nav {
-    background-color: var(--site-secondary-color);
+    background-color: var(--site-tertiary-color);
     height: 32px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    padding: 8px;
 }
 .nav-link {
     font-family: "Roboto", sans-serif;
@@ -124,18 +122,21 @@ button.theme-toggle {
     font-weight: 700;
     text-decoration: none;
     color: var(--accent-color);
-    display: block;
-    padding-left: 10px;
-    padding-right: 10px;
     text-align: center;
-    height: auto;
+    transition: 0.3s;
+    padding: 8px;
+    text-decoration: none;
+    border-radius: 24px;
 }
 .nav-link.selected {
-    border-bottom: 2px solid var(--accent-color);;
+    background-color: var(--site-secondary-color);
+    color: #ebedf2;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 .nav-link:hover {
-    background-color: var(--hover-background-color);
+    background-color: var(--site-secondary-color);
     color: #ebedf2;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 
 footer {
@@ -229,13 +230,6 @@ project-card {
 
     .header-nav {
         height: 42px;
-    }
-    .nav-link {
-        font-size: x-large;
-        width: 96px;
-    }
-    .nav-link.selected {
-        border-bottom: 4px solid var(--accent-color);;
     }
 }
 /* Larger than Desktop HD */
