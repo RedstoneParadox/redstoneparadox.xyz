@@ -29,16 +29,11 @@ body {
     --theme-icon-margin: auto;
 }
 
-.header-top {
+header {
     background-color: var(--site-tertiary-color);
     color: var(--text-color);
     padding-left: 2%;
     padding-right: 2%;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
 }
 .site-name {
     font-family: "Roboto", sans-serif;
@@ -47,6 +42,9 @@ body {
     color: var(--accent-color);
     margin-left: 1%;
     font-weight: 600;
+    width: fit-content;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 .site-icon {
     width: 24px;
@@ -62,9 +60,6 @@ button.theme-toggle {
     width: 48px;
     height: 24px;
     padding: 0%;
-    margin-left: auto;
-    margin-top: auto;
-    margin-bottom: auto;
 }
 .theme-toggle-thumb {
     display: grid;
@@ -112,9 +107,8 @@ button.theme-toggle {
 }
 
 .header-nav {
-    background-color: var(--site-tertiary-color);
-    height: 32px;
-    padding: 8px;
+    width: fit-content;
+    height: 100%;
 }
 .nav-link {
     font-family: "Roboto", sans-serif;
@@ -127,6 +121,8 @@ button.theme-toggle {
     padding: 8px;
     text-decoration: none;
     border-radius: 24px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 .nav-link.selected {
     background-color: var(--site-secondary-color);
@@ -200,11 +196,6 @@ project-card {
 }
 /* Larger than tablet */
 @media (min-width: 750px) {
-    .header-top {
-        height: 32px;
-        max-height: 32px;
-        min-height: 32px;
-    }
     .site-icon {
         width: 32px;
         height: 32px;
@@ -215,35 +206,25 @@ project-card {
 }
 /* Larger than desktop */
 @media (min-width: 1000px) {
-    .header-top {
-        height: 40px;
-        max-height: 40px;
-        min-height: 40px;
-    }
     .site-icon {
         width: 40px;
         height: 40px;
     }
-    .site-name {
-        font-size: x-large;
-    }
-
-    .header-nav {
-        height: 42px;
-    }
 }
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {
-    .header-top {
-        height: 48px;
-        max-height: 48px;
-        min-height: 48px;
+    header {
+        height: 40px;
+        padding-top: 8px;
+        padding-bottom: 8px;
     }
-    .site-name {
-        font-size: 28px;
-    }
+
     .site-icon {
-        width: 48px;
-        height: 48px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .site-name {
+        font-size: x-large;
     }
 }

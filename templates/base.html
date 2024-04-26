@@ -41,32 +41,36 @@
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<header>
-  <div class="header-top">
-    <img src="{{ get_url(path="images/redstone_torch.png") | safe }}" class="site-icon">
-    <span class="site-name">Redstone Paradox</span>
+<header class="row">
+  <div class="six columns">
+    <img src="{{ get_url(path="images/redstone_torch.png") | safe }}" class="site-icon u-pull-left">
+    <div class="site-name u-pull-left">Redstone Paradox</div>
+  </div>
+  <div class="five columns" style="height: 100%;">
+    <div class="header-nav u-pull-right">
+      {%- set root = get_section(path="_index.md") -%}
+      {%- set classes = "nav-link" %}
+      {% if root.title == section.title %}
+      {%- set classes = "nav-link selected" %}
+      {% endif %}
+      <a href="{{ root.path }}" class="{{ classes }}">{{ root.title }}</a>
+      {% for subsection_path in root.subsections %}
+      {%- set subsection = get_section(path=subsection_path) -%}
+        {%- set classes = "nav-link" %}
+        {% if subsection.title == section.title %}
+        {%- set classes = "nav-link selected" %}
+        {% endif %}
+      <a href="{{ subsection.path }}" class="{{ classes }}">{{ subsection.title }}</a>
+      {% endfor %}
+      <a href="https://maven.redstoneparadox.xyz" class="nav-link" target="_blank">Maven</a>
+    </div>
+  </div>
+  <div class="one columns" style="height: 100%;">
     <button onclick="toggleDarkMode()" class="theme-toggle" title="Toggle Theme">
       <div class="theme-toggle-thumb start">
         <img src="{{ get_url(path="images/theme/sun-fill.svg") | safe }}" class="theme-icon">
-      </button>
-    </a>
-  </div>
-  <div class="header-nav">
-    {%- set root = get_section(path="_index.md") -%}
-    {%- set classes = "nav-link" %}
-    {% if root.title == section.title %}
-    {%- set classes = "nav-link selected" %}
-    {% endif %}
-    <a href="{{ root.path }}" class="{{ classes }}">{{ root.title }}</a>
-    {% for subsection_path in root.subsections %}
-    {%- set subsection = get_section(path=subsection_path) -%}
-      {%- set classes = "nav-link" %}
-      {% if subsection.title == section.title %}
-      {%- set classes = "nav-link selected" %}
-      {% endif %}
-    <a href="{{ subsection.path }}" class="{{ classes }}">{{ subsection.title }}</a>
-    {% endfor %}
-    <a href="https://maven.redstoneparadox.xyz" class="nav-link" target="_blank">Maven</a>
+      </div>
+    </button>
   </div>
 </header>
 <div class="container" style="margin-top: 5%;">
