@@ -130,7 +130,7 @@ button.theme-toggle {
     margin-left: 2px;
     margin-right: 2px;
 }
-.nav-link.selected {
+.nav-link.current {
     background-color: var(--site-secondary-color);
     color: #ebedf2;
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
@@ -261,5 +261,10 @@ div.right-border {
     }
     .copyright-box {
         padding-top: 10px;
+    }
+
+    .external-icon {
+        width: 16px;
+        height: 16px;
     }
 }
