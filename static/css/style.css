@@ -109,6 +109,7 @@ button.theme-toggle {
 .header-nav {
     width: fit-content;
     height: 100%;
+    padding: 8px;
 }
 .nav-link {
     font-family: "Roboto", sans-serif;
@@ -123,6 +124,7 @@ button.theme-toggle {
     border-radius: 24px;
     margin-top: auto;
     margin-bottom: auto;
+    margin-left: 8px;
 }
 .nav-link.selected {
     background-color: var(--site-secondary-color);
@@ -227,7 +229,6 @@ project-card {
         width: 40px;
         height: 40px;
     }
-
     .site-name {
         font-size: x-large;
     }
