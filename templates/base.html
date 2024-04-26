@@ -49,7 +49,7 @@
     </div>
     <div class="six columns" style="height: 100%;">
       <div class="u-pull-right" style="width: fit-content;">
-        <div class="header-nav u-pull-left">
+        <div class="header-nav u-pull-left right-border">
           {%- set root = get_section(path="_index.md") -%}
           {%- set classes = "nav-link" %}
           {% if root.title == section.title %}
@@ -80,16 +80,17 @@
 </div>
 <footer>
   <div class="container">
-    <div class="social-icon-box">
-      <a href="https://github.com/RedstoneParadox"><img src="{{ get_url(path="images/social/github.svg") | safe }}" class="social-icon" style="width:28px;height:28px;margin: 8px;"></a>
-      <a href="https://www.youtube.com/@redstoneparadox"><img src="{{ get_url(path="images/social/youtube.svg") | safe }}" class="social-icon" style="width:28px;height:28px;margin: 8px;"></a>
-      <a href="https://modrinth.com/user/RedstoneParadox"><img src="{{ get_url(path="images/social/modrinth.svg") | safe }}" class="social-icon" style="width:28px;height:28px;margin: 8px;"></a>
-      <a href="https://discord.gg/crZpcjtdJR"><img src="{{ get_url(path="images/social/discord.svg") | safe }}" class="social-icon" style="width:28px;height:28px;margin: 8px;"></a>
+    <div class="centered">
+      <div class="social-icon-box right-border u-pull-left">
+        <a href="https://github.com/RedstoneParadox"><img src="{{ get_url(path="images/social/github.svg") | safe }}" class="social-icon" style="width:28px;height:28px;margin: 8px;"></a>
+        <a href="https://www.youtube.com/@redstoneparadox"><img src="{{ get_url(path="images/social/youtube.svg") | safe }}" class="social-icon" style="width:28px;height:28px;margin: 8px;"></a>
+        <a href="https://modrinth.com/user/RedstoneParadox"><img src="{{ get_url(path="images/social/modrinth.svg") | safe }}" class="social-icon" style="width:28px;height:28px;margin: 8px;"></a>
+        <a href="https://discord.gg/crZpcjtdJR"><img src="{{ get_url(path="images/social/discord.svg") | safe }}" class="social-icon" style="width:28px;height:28px;margin: 8px;"></a>
+      </div>
+      <div class="copyright-box shrink u-pull-right">
+        <span style="font-weight: 600;">Copyright &copy; RedstoneParadox 2024</span>
+      </div>
     </div>
-    <hr style="margin: 8px;width: 20%;margin-left: auto;margin-right: auto;margin-top: 0%;" />
-    <p style="text-align: center;">
-      <span style="font-weight: 600;">Copyright &copy; RedstoneParadox 2024</span>
-    </p>
   </div>
 </footer>
 
