@@ -204,6 +204,11 @@ hr {
     flex-wrap: wrap;
 }
 
+.centered {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Smaller than tablet */
 @media (width < 750px) {
     h4 {
