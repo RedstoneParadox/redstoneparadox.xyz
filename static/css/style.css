@@ -9,6 +9,7 @@ html, body {
     --lightmode-secondary-background-color: #d0d9d9;
     --lightmode-border-color: #dce2e3;
     --lightmode-text-color: #222;
+    --lightmode-secondary-text-color: #555;
     --lightmode-theme-icon-filter: invert(97%) sepia(5%) saturate(155%) hue-rotate(152deg) brightness(92%) contrast(95%);
 
     /* Darkmode colors */
@@ -16,6 +17,7 @@ html, body {
     --darkmode-secondary-background-color: #414f59;
     --darkmode-border-color: #39444d;
     --darkmode-text-color: #dedede;
+    --darkmode-secondary-text-color: #ababab;
     --darkmode-theme-icon-filter: invert(10%) sepia(23%) saturate(627%) hue-rotate(201deg) brightness(95%) contrast(92%);
 
     /* Accent colors */
@@ -25,6 +27,7 @@ body {
     --site-background-color: var(--lightmode-background-color);
     --site-secondary-background-color: var(--lightmode-secondary-background-color);
     --site-border-color: var(--lightmode-border-color);
+    --site-secondary-text-color: var(--lightmode-secondary-text-color);
 
     --site-alt-background-color: #2f3b40;
     --site-alt-tertiary-color: #414f59;
@@ -37,6 +40,7 @@ body {
     --site-background-color: var(--darkmode-background-color);
     --site-secondary-background-color: var(--darkmode-secondary-background-color);
     --site-border-color: var(--darkmode-border-color);
+    --site-secondary-text-color: var(--darkmode-secondary-text-color);
 
     --site-alt-background-color: #e6ebed;
     --site-alt-tertiary-color: #d0d9d9;
@@ -67,6 +71,8 @@ header {
     border-radius: 50%;
     background-color: var(--site-background-color);
 }
+
+/* Navigation */
 .header-nav {
     width: fit-content;
     height: 100%;
@@ -80,7 +86,7 @@ header {
     font-size: large;
     font-weight: 700;
     text-decoration: none;
-    color: var(--accent-color);
+    color: var(--site-secondary-text-color);
     text-align: center;
     transition: 0.3s;
     padding: 8px;
@@ -91,12 +97,12 @@ header {
 }
 .nav-link.current {
     background-color: var(--site-border-color);
-    color: #ebedf2;
+    color: var(--accent-color);
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 .nav-link:hover {
     background-color: var(--site-border-color);
-    color: #ebedf2;
+    color: var(--accent-color);
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 
@@ -214,6 +220,10 @@ footer {
     padding-top: 8px;
     padding-bottom: 8px;
 }
+.copyright-box {
+    color: var(--site-secondary-text-color);
+    font-weight: 600;
+}
 .social-icon {
     filter: invert(42%) sepia(51%) saturate(632%) hue-rotate(312deg) brightness(92%) contrast(101%);
 }
@@ -242,6 +252,10 @@ footer {
 
 div.right-border {
     border-right: 2px solid var(--site-border-color);
+}
+
+.secondary-text-color {
+    color: var(--site-secondary-text-color);
 }
 
 /* Media Queries */
