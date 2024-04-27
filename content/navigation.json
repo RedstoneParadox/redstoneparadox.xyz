@@ -16,7 +16,7 @@
     "external": [
         {
             "text": "Maven",
-            "url": "maven.redstoneparadox.xyz"
+            "url": "https://maven.redstoneparadox.xyz"
         }
     ]
 }
