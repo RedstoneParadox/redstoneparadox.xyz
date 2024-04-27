@@ -1,10 +1,7 @@
 +++
 title = "Welcome to my Blog!"
-template="blog_post.html"
+description="An introduction to my blog"
 date = 2024-04-26
-
-[extra]
-summary="An introduction to my blog"
 +++
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc vel risus commodo viverra maecenas accumsan lacus vel facilisis. Senectus et netus et malesuada fames ac turpis egestas sed. In tellus integer feugiat scelerisque varius morbi enim nunc. Et egestas quis ipsum suspendisse ultrices. Mattis pellentesque id nibh tortor id aliquet. Sodales ut etiam sit amet. Est ultricies integer quis auctor elit sed vulputate mi. A condimentum vitae sapien pellentesque habitant morbi. Viverra vitae congue eu consequat ac felis donec. Lacus luctus accumsan tortor posuere ac ut. Sed libero enim sed faucibus. Gravida arcu ac tortor dignissim convallis aenean et. Fermentum dui faucibus in ornare quam.
