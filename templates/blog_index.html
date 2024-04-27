@@ -8,7 +8,7 @@
             <a href="{{ url }}">{{ page.title }}</a>
         </div>
         <div class="six columns" style="text-align: right;">
-            Published: {{ page.date }}
+            Published: {{ page.date | date(format="%B %e, %Y") }}
         </div>
         <br />
         <br />

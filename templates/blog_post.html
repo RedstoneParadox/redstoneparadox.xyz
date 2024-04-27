@@ -8,7 +8,7 @@
     <h1>{{ page.title }}</h1>
     
     {{ page.extra.summary }}<br />
-    Published {{ page.date }}
+    Published: {{ page.date | date(format="%B %e, %Y") }}
     <hr />
   </div>
 </div>
