@@ -1,6 +1,6 @@
 +++
 title = "Welcome to my Blog!"
-description="An introduction to my blog"
+description="A brief introduction to my new blog and a discussion of some other things."
 date = 2024-04-26
 +++
 
