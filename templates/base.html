@@ -5,7 +5,7 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>{{ section.title }} - RedstoneParadox's Site</title>
+  <title>{%- block title -%}{{ section.title }}{%- endblock title -%}</title>
   <meta name="description" content="">
   <meta name="author" content="RedstoneParadox">
 
@@ -56,7 +56,7 @@
             {%- set text = link.text -%}
             {%- set class = "nav-link" -%}
 
-            {%- if page and page.colocated_path == link.path -%}
+            {%- if page and link.path == page.colocated_path -%}
               {%- set class = "nav-link current" -%}
             {%- endif -%}
             {%- if section and section.path == link.path -%}

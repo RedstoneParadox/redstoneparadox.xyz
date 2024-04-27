@@ -142,13 +142,13 @@ button.theme-toggle {
 }
 
 .content {
-    margin-top: 5%;
+    margin-top: 2%;
     flex-grow: 1;
 }
 
 footer {
     width: 100%;
-    margin-top: 5%;
+    margin-top: 2%;
     background-color: var(--site-tertiary-color);
     border-top: 4px solid var(--site-secondary-color);
     padding-top: 8px;

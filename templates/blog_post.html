@@ -1,7 +1,15 @@
 {% extends "base.html" %}
 
+{%- block title -%}Blog - {{ page.title }}{%- endblock title -%}
+
 {% block content %}
-<div class="eight columns" style="margin-left: 13.3333333333%;">
-  {{ section.content | safe }}
+<div class="two columns">
+  Hi
+</div>
+<div class="eight columns">
+  <h1 style="text-align: center;">{{ page.title }}</h1>
+  {{ page.extra.summary }}
+  <hr />
+  {{ page.content | safe }}
 </div>
 {% endblock content %}
