@@ -132,10 +132,6 @@ hr {
     border-color: var(--site-border-color);
     border-width: 1px;
 }
-h4 {
-    font-family: "Roboto", sans-serif;
-    color: var(--accent-color);
-}
 
 /* Projects */
 project-card {
@@ -225,6 +221,7 @@ footer {
     justify-content: center;
     width: fit-content;
     margin-right: 8px;
+    padding-right: 8px;
 }
 
 /* Utils */
@@ -287,7 +284,7 @@ div.right-border {
         font-size: x-large;
     }
     .copyright-box {
-        padding-top: 10px;
+        padding-top: 8px;
     }
 
     .external-icon {
