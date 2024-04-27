@@ -4,7 +4,7 @@ template = "index.html"
 sort_by = "title" 
 +++
 
-#### Welcome to my Website!
+# Welcome to my Website!
 
 I am RedstoneParadox, a hobbyist programmer from a place that hopefully exists.
 

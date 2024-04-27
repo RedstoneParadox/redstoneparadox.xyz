@@ -1,7 +1,15 @@
 {% extends "base.html" %}
+{% import "macros/post_preview.html" as post %}
 
 {% block content %}
 <div class="eight columns" style="margin-left: 13.3333333333%;">
   {{ section.content | safe }}
+  <hr />
+  <h1>Latest Blog Post</h1>
+  {%- set blog = get_section(path="blog/_index.md") -%}
+  <hr />
+  <div>
+    {{ post::post_preview(post=blog.pages | first) }}
+  </div>
 </div>
 {% endblock content %}

@@ -1,0 +1,13 @@
+{%- macro post_preview(post) -%}
+    {%- set url = get_url(path=post.path) -%}
+    <div class="six columns">
+        <a href="{{ url }}">{{ post.title }}</a>
+    </div>
+    <div class="six columns" style="text-align: right;">
+        Published: {{ post.date | date(format="%B %e, %Y") }}
+    </div>
+    <br />
+    <br />
+    {{ post.description }}<br /><a href="{{ url }}">Read more >>></a>
+    <hr style="margin-top: 8px;" />
+{%- endmacro post_preview -%}
