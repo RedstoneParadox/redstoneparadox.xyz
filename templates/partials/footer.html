@@ -5,7 +5,15 @@
         {%- set socials = load_data(path="socials.json") -%}
         {%- for link in socials -%}
             {%- set img_src = get_url(path=link.icon) -%}
-            <a href="{{ link.url }}" class="social-link" title="{{ link.title }}"><img src="{{ img_src }}" class="social-icon" /></a>
+            {%- set class = "social-icon" -%}
+
+            {%- if link.class -%}
+              {%- set class = "social-icon " ~ link.class -%}
+            {%- endif -%}
+
+            <a href="{{ link.url }}" class="social-link" title="{{ link.title }}">
+              <img src="{{ img_src }}"  class="{{ class }}"  />
+            </a>
         {%- endfor -%}
         </div>
         <div class="copyright-box u-pull-right">
