@@ -30,9 +30,8 @@
             {%- endfor -%}
           </div>
           <button onclick="toggleDarkMode()" class="theme-toggle u-pull-right" title="Toggle Theme">
-            <div class="theme-toggle-thumb start">
-              <img src="{{ get_url(path="images/theme/sun-fill.svg") | safe }}" class="theme-icon">
-            </div>
+            {%- set theme_icon_url = get_url(path="images/theme/moon-fill.svg") -%}
+            <img src="{{ theme_icon_url }}" class="theme-icon">
           </button>
         </div>
       </div>
