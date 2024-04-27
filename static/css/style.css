@@ -32,9 +32,6 @@ body {
 header {
     background-color: var(--site-tertiary-color);
     color: var(--text-color);
-    padding-left: 2%;
-    padding-right: 2%;
-    border-bottom: 4px solid var(--site-secondary-color);
 }
 .site-name {
     font-family: "Roboto", sans-serif;
@@ -150,7 +147,6 @@ footer {
     width: 100%;
     margin-top: 2%;
     background-color: var(--site-tertiary-color);
-    border-top: 4px solid var(--site-secondary-color);
     padding-top: 8px;
     padding-bottom: 8px;
 }
