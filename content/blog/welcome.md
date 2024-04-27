@@ -1,12 +1,15 @@
 +++
 title = "Welcome to my Blog!"
 template="blog_post.html"
+date = 2024-04-26
 
 [extra]
 summary="An introduction to my blog"
 +++
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc vel risus commodo viverra maecenas accumsan lacus vel facilisis. Senectus et netus et malesuada fames ac turpis egestas sed. In tellus integer feugiat scelerisque varius morbi enim nunc. Et egestas quis ipsum suspendisse ultrices. Mattis pellentesque id nibh tortor id aliquet. Sodales ut etiam sit amet. Est ultricies integer quis auctor elit sed vulputate mi. A condimentum vitae sapien pellentesque habitant morbi. Viverra vitae congue eu consequat ac felis donec. Lacus luctus accumsan tortor posuere ac ut. Sed libero enim sed faucibus. Gravida arcu ac tortor dignissim convallis aenean et. Fermentum dui faucibus in ornare quam.
+
+# Some Things
 
 Vel pretium lectus quam id leo in vitae turpis. Dictumst vestibulum rhoncus est pellentesque. Vel pharetra vel turpis nunc eget. Et malesuada fames ac turpis. Commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae. Quisque sagittis purus sit amet volutpat consequat mauris nunc. Sed risus ultricies tristique nulla aliquet enim tortor at. Urna id volutpat lacus laoreet non curabitur. Nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Amet aliquam id diam maecenas ultricies. Urna nec tincidunt praesent semper feugiat. Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor. Ipsum dolor sit amet consectetur. Aliquet sagittis id consectetur purus. Amet venenatis urna cursus eget nunc. Massa tincidunt dui ut ornare lectus sit. Diam vulputate ut pharetra sit amet aliquam id diam maecenas.
 

@@ -3,13 +3,31 @@
 {%- block title -%}Blog - {{ page.title }}{%- endblock title -%}
 
 {% block content %}
-<div class="two columns">
-  Hi
+<div class="row" >
+  <div class="nine offset-by-three columns">
+    <h1>{{ page.title }}</h1>
+    
+    {{ page.extra.summary }}<br />
+    Published {{ page.date }}
+    <hr />
+  </div>
 </div>
-<div class="eight columns">
-  <h1 style="text-align: center;">{{ page.title }}</h1>
-  {{ page.extra.summary }}
-  <hr />
-  {{ page.content | safe }}
+<div class="row">
+  <div class="three columns toc-box">
+    <div class="toc-box">
+      <div style="text-align: center;font-weight: 600;">Contents</div>
+      <hr style="margin: 4px;" />
+      <ul>
+        <li><a href="#top">Top</a></li>
+        {%- for h1 in page.toc -%}
+        <li><a href="{{ h1.permalink | safe }}">{{ h1.title }}</a></li>
+        {%- endfor -%}
+      </ul>
+
+    </div>
+  </div>
+  <div class="nine columns">
+    {{ page.content | safe }}
+  </div>
 </div>
 {% endblock content %}

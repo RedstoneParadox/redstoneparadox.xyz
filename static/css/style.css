@@ -221,6 +221,11 @@ div.right-border {
     border-right: 2px solid var(--site-secondary-color);
 }
 
+.toc-box {
+    position: sticky;
+    top: 0;
+}
+
 /* Smaller than tablet */
 @media (width < 750px) {
     h4 {
