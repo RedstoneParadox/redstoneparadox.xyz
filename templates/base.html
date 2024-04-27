@@ -41,64 +41,11 @@
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<header class="row">
-  <div class="container">
-    <div class="six columns">
-      <img src="{{ get_url(path="images/redstone_torch.png") | safe }}" class="site-icon u-pull-left">
-      <div class="site-name u-pull-left">Redstone Paradox</div>
-    </div>
-    <div class="six columns" style="height: 100%;">
-      <div class="u-pull-right" style="width: fit-content;">
-        <div class="header-nav u-pull-left right-border">
-          {%- set navigation = load_data(path="navigation.json") -%}
-          {%- for link in navigation.site -%}
-            {%- set url = get_url(path=link.path) -%}
-            {%- set text = link.text -%}
-            {%- set class = "nav-link" -%}
-
-            {%- if page and link.path == page.colocated_path -%}
-              {%- set class = "nav-link current" -%}
-            {%- endif -%}
-            {%- if section and section.path == link.path -%}
-              {%- set class = "nav-link current" -%}
-            {%- endif -%}
-
-            <a href="{{ url }}" class="{{ class }}">{{ text }}</a>
-          {%- endfor -%}
-          {%- for link in navigation.external -%}
-            {%- set text = link.text -%}
-            {%- set class = "nav-link" -%}
-
-            <a href="{{ link.url }}" class="{{ class }}">{{ text }}</a>
-          {%- endfor -%}
-        </div>
-        <button onclick="toggleDarkMode()" class="theme-toggle u-pull-right" title="Toggle Theme">
-          <div class="theme-toggle-thumb start">
-            <img src="{{ get_url(path="images/theme/sun-fill.svg") | safe }}" class="theme-icon">
-          </div>
-        </button>
-      </div>
-    </div>
-  </div>
-</header>
+{% include "partials/header.html" %}
 <div class="container content">
   {% block content %} {% endblock %}
 </div>
-<footer>
-  <div class="container">
-    <div class="centered">
-      <div class="social-icon-box right-border u-pull-left">
-        <a href="https://github.com/RedstoneParadox"><img src="{{ get_url(path="images/social/github.svg") | safe }}" class="social-icon" style="width:28px;height:28px;margin: 8px;"></a>
-        <a href="https://www.youtube.com/@redstoneparadox"><img src="{{ get_url(path="images/social/youtube.svg") | safe }}" class="social-icon" style="width:28px;height:28px;margin: 8px;"></a>
-        <a href="https://modrinth.com/user/RedstoneParadox"><img src="{{ get_url(path="images/social/modrinth.svg") | safe }}" class="social-icon" style="width:28px;height:28px;margin: 8px;"></a>
-        <a href="https://discord.gg/crZpcjtdJR"><img src="{{ get_url(path="images/social/discord.svg") | safe }}" class="social-icon" style="width:28px;height:28px;margin: 8px;"></a>
-      </div>
-      <div class="copyright-box u-pull-right">
-        Copyright &copy; RedstoneParadox 2024
-      </div>
-    </div>
-  </div>
-</footer>
+{% include "partials/footer.html" %}
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
