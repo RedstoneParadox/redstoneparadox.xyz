@@ -2,10 +2,11 @@
     <div class="container">
       <div class="centered">
         <div class="social-icon-box right-border u-pull-left">
-          <a href="https://github.com/RedstoneParadox"><img src="{{ get_url(path="images/social/github.svg") | safe }}" class="social-icon" style="width:28px;height:28px;margin: 8px;"></a>
-          <a href="https://www.youtube.com/@redstoneparadox"><img src="{{ get_url(path="images/social/youtube.svg") | safe }}" class="social-icon" style="width:28px;height:28px;margin: 8px;"></a>
-          <a href="https://modrinth.com/user/RedstoneParadox"><img src="{{ get_url(path="images/social/modrinth.svg") | safe }}" class="social-icon" style="width:28px;height:28px;margin: 8px;"></a>
-          <a href="https://discord.gg/crZpcjtdJR"><img src="{{ get_url(path="images/social/discord.svg") | safe }}" class="social-icon" style="width:28px;height:28px;margin: 8px;"></a>
+        {%- set socials = load_data(path="socials.json") -%}
+        {%- for link in socials -%}
+            {%- set img_src = get_url(path=link.icon) -%}
+            <a href="{{ link.url }}" class="social-link" title="{{ link.title }}"><img src="{{ img_src }}" class="social-icon" /></a>
+        {%- endfor -%}
         </div>
         <div class="copyright-box u-pull-right">
           Copyright &copy; RedstoneParadox 2024

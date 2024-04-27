@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Github",
+        "icon": "images/social/github.svg",
+        "url": "https://github.com/RedstoneParadox"
+    },
+    {
+        "title": "YouTube",
+        "icon": "images/social/youtube.svg",
+        "url": "https://www.youtube.com/@redstoneparadox"
+    },
+    {
+        "title": "Modrinth",
+        "icon": "images/social/modrinth.svg",
+        "url": "https://modrinth.com/user/RedstoneParadox"
+    },
+    {
+        "title": "Discord",
+        "icon": "images/social/discord.svg",
+        "url": "https://discord.gg/crZpcjtdJR"
+    }
+]

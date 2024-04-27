@@ -22,6 +22,7 @@ html, body {
 
     /* Accent colors */
     --accent-color: #cc5252;
+    --accent-filter: invert(42%) sepia(51%) saturate(632%) hue-rotate(312deg) brightness(92%) contrast(101%);
 }
 body {
     --site-background-color: var(--lightmode-background-color);
@@ -184,11 +185,26 @@ footer {
     color: var(--site-secondary-text-color);
     font-weight: 600;
 }
+.social-link {
+    display: block;
+    transition: 0.3s;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    margin: 2px;
+}
+.social-link:hover {
+    background-color: var(--site-border-color);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
 .social-icon {
-    filter: invert(42%) sepia(51%) saturate(632%) hue-rotate(312deg) brightness(92%) contrast(101%);
+    filter: var(--site-secondary-text-filter);
+    width: 28px;
+    height: 28px;
+    margin: 4px;
 }
 .social-icon:hover {
-    filter: invert(99%) sepia(8%) saturate(1011%) hue-rotate(178deg) brightness(99%) contrast(91%);
+    filter: var(--accent-filter);
 }
 .social-icon-box {
     display: flex;
