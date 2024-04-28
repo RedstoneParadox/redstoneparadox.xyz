@@ -8,6 +8,12 @@
            <span class="secondary-text-color"> Published: {{ post.date | date(format="%B %e, %Y") }}</span>
         </div>
     </div>
-    {{ post.description }} | <a href="{{ url }}">More ></a>
+    {{ post.description }} | <a href="{{ url }}">More ></a><br />
+    {%- for name, taxon in post.taxonomies -%}
+    
+        {%- for item in taxon -%}
+            <a class="tag">#{{ item }}</a>
+        {%- endfor -%}
+    {%- endfor -%}
     <hr style="margin-top: 8px;" />
 {%- endmacro post_preview -%}

@@ -23,11 +23,16 @@
         <li><a href="{{ h1.permalink | safe }}">{{ h1.title }}</a></li>
         {%- endfor -%}
       </ul>
-
     </div>
   </div>
   <div class="nine columns">
     {{ page.content | safe }}
+    <hr>
+    {%- for name, taxon in page.taxonomies -%}
+      {%- for item in taxon -%}
+      <a class="tag">#{{ item }}</a>
+      {%- endfor -%}
+    {%- endfor -%}
   </div>
 </div>
 {% endblock content %}
