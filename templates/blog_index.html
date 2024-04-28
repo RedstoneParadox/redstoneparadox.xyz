@@ -1,19 +1,10 @@
 {% extends "base.html" %}
+{% import "macros/post_preview.html" as post %}
 
 {% block content %}
-{%- for page in paginator.pages -%}
-    <div>
-        {%- set url = get_url(path=page.path) -%}
-        <div class="six columns">
-            <a href="{{ url }}">{{ page.title }}</a>
-        </div>
-        <div class="six columns" style="text-align: right;">
-            Published: {{ page.date | date(format="%B %e, %Y") }}
-        </div>
-        <br />
-        <br />
-        {{ page.description }}<br /><a href="{{ url }}">Read more >>></a>
-        <hr style="margin-top: 8px;" />
-    </div>
+<div class="eight offset-by-two columns">
+    {%- for page in paginator.pages -%}
+    {{ post::post_preview(post=page) }}
 {%- endfor -%}
+</div>
 {% endblock content %}
