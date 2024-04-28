@@ -8,7 +8,7 @@
            <span class="secondary-text-color"> Published: {{ post.date | date(format="%B %e, %Y") }}</span>
         </div>
     </div>
-    {{ post.description }} | <a href="{{ url }}">More ></a><br />
+    {{ post.description }} | <a href="{{ url }}">More →</a><br />
     {%- for name, taxon in post.taxonomies -%}
     
         {%- for item in taxon -%}
