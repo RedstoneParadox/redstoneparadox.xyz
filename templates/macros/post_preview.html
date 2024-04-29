@@ -5,7 +5,9 @@
             <h5>{{ post.title }}</h5>
         </div>
         <div class="six columns" style="text-align: right;">
-           <span class="secondary-text-color"> Published: {{ post.date | date(format="%B %e, %Y") }}</span>
+           <span class="secondary-text-color"> 
+            {{ post.date | date(format="%B %e, %Y") }} | {{ post.reading_time }} min read
+        </span>
         </div>
     </div>
     {{ post.description }} | <a href="{{ url }}">More →</a><br />
