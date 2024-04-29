@@ -29,10 +29,9 @@
               <a href="{{ link.url }}" class="{{ class }}">{{ text }}</a>
             {%- endfor -%}
           </div>
-          <button onclick="toggleDarkMode()" class="theme-toggle u-pull-right" title="Toggle Theme">
-            {%- set theme_icon_url = get_url(path="images/theme/moon-fill.svg") -%}
-            <img src="{{ theme_icon_url }}" class="theme-icon">
-          </button>
+          {%- set light_icon = get_url(path="images/theme/moon-fill.svg") -%}
+          {%- set dark_icon = get_url(path="images/theme/sun-fill.svg") -%}
+          <theme-toggle class="theme-toggle u-pull-right" title="Toggle Theme" light-icon="{{ light_icon }}" dark-icon="{{ dark_icon }}"></theme-toggle>
         </div>
       </div>
     </div>
