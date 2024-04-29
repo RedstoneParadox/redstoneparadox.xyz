@@ -110,9 +110,7 @@ theme-toggle::part(button) {
     height: 40px;
     padding: 0%;
     transition: 0.3s;
-    background-color: var(--site-border-color);
-    color: var(--accent-color);
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    background-color: var(--site-secondary-background-color);
 }
 theme-toggle::part(button):hover {
     background-color: var(--site-border-color);
