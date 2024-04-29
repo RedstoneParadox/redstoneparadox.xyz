@@ -7,6 +7,7 @@ class ThemeToggle extends HTMLElement {
   }
 
   connectedCallback() {
+    const self = this;
     const shadow = this.attachShadow({ mode: 'open' });
     const button = document.createElement("button")
     this.icon = document.createElement("img")
@@ -15,10 +16,12 @@ class ThemeToggle extends HTMLElement {
     this.icon.part = "icon"
     this.icon.src = this.getAttribute("dark-icon")
 
-    button.addEventListener("click", this.toggleTheme)
+    button.addEventListener("click", function() {
+      self.toggleTheme();
+    })
 
     shadow.appendChild(button);
-    button.appendChild(this.icon)
+    button.appendChild(this.icon);
   }
 
   toggleTheme() {
