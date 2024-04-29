@@ -180,6 +180,7 @@ project-card {
     text-decoration: none;
     border-radius: 16px;
     margin-right: 4px;
+    background-color: var(--site-secondary-background-color);
 }
 .tag:hover {
     background-color: var(--site-border-color);
