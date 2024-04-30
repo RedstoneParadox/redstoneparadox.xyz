@@ -51,7 +51,7 @@ header {
     top: 0;
     z-index: 1;
 }
-.site-name {
+.site-name-box{
     font-family: "Roboto", sans-serif;
     font-size: medium;
     font-weight: 700;
@@ -59,8 +59,7 @@ header {
     margin-left: 1%;
     font-weight: 600;
     width: fit-content;
-    margin-top: auto;
-    margin-bottom: auto;
+    padding-top: 2px;
     display: none;
 }
 .site-icon {
@@ -281,7 +280,7 @@ div.right-border {
         width: 32px;
         height: 32px;
     }
-    .site-name {
+    .site-name-box{
         display: block;
         font-size: large;
     }
@@ -295,11 +294,7 @@ div.right-border {
         margin-right: 8px;
     }
     .nav-link {
-        font-family: "Roboto", sans-serif;
         font-size: medium;
-        font-weight: 700;
-        text-align: center;
-        transition: 0.3s;
         padding: 4px;
         border-radius: 16px;
         margin-left: 2px;
@@ -318,8 +313,10 @@ div.right-border {
         width: 40px;
         height: 40px;
     }
-    .site-name {
+    .site-name-box{
         font-size: x-large;
+        height: 40px;
+        padding-top: 0px;
     }
 
     theme-toggle::part(button) {
