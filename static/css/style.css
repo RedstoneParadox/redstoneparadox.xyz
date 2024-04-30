@@ -101,6 +101,7 @@ header {
     background-color: var(--site-border-color);
     color: var(--accent-color);
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    text-decoration: none;
 }
 
 theme-toggle::part(button) {
@@ -188,6 +189,7 @@ project-card {
     background-color: var(--site-border-color);
     color: var(--accent-color);
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    text-decoration: none;
 }
 
 /* Footer */
