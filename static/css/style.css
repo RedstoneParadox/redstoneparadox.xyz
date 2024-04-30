@@ -5,9 +5,9 @@ html, body {
     flex-direction: column;
 
     /* Lightmode colors */
-    --lightmode-background-color: #dfe4e6;
-    --lightmode-secondary-background-color: #d0d9d9;
-    --lightmode-border-color: #dce2e3;
+    --lightmode-background-color: #e1e6e8;
+    --lightmode-secondary-background-color: #cbd4d4;
+    --lightmode-border-color: #d5ddde;
     --lightmode-text-color: #222;
     --lightmode-secondary-text-color: #555;
     --lightmode-secondary-text-filter: invert(28%) sepia(0%) saturate(3625%) hue-rotate(150deg) brightness(79%) contrast(61%);
@@ -130,8 +130,8 @@ theme-toggle::part(icon) {
     flex-grow: 1;
 }
 hr {
-    border-color: var(--site-border-color);
-    border-width: 1px;
+    border: 0;
+    border-top: 2px solid var(--site-border-color);
 }
 a {
     color: var(--accent-color);
