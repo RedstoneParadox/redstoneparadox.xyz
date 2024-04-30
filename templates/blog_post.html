@@ -4,28 +4,12 @@
 
 {% block content %}
 <div class="row" >
-  <div class="nine offset-by-three columns">
+  <div class="eight offset-by-two columns">
     <h1>{{ page.title }}</h1>
     
     <span class="secondary-text-color">{{ page.description }}</span><br />
     {{ page.date | date(format="%B %e, %Y") }} | {{ page.reading_time }} min read
     <hr />
-  </div>
-</div>
-<div class="row">
-  <div class="three columns toc-box">
-    <div class="toc-box">
-      <div style="text-align: center;font-weight: 600;">Contents</div>
-      <hr style="margin: 4px;" />
-      <ul>
-        <li><a href="#top">Top</a></li>
-        {%- for h1 in page.toc -%}
-        <li><a href="{{ h1.permalink | safe }}">{{ h1.title }}</a></li>
-        {%- endfor -%}
-      </ul>
-    </div>
-  </div>
-  <div class="nine columns">
     {{ page.content | safe }}
     <hr>
     {%- for name, taxon in page.taxonomies -%}
