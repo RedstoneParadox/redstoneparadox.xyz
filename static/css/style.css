@@ -13,8 +13,8 @@ html, body {
     --lightmode-secondary-text-filter: invert(28%) sepia(0%) saturate(3625%) hue-rotate(150deg) brightness(79%) contrast(61%);
 
     /* Darkmode colors */
-    --darkmode-background-color: #2f3b40;
-    --darkmode-secondary-background-color: #414f59;
+    --darkmode-background-color: #181e21;
+    --darkmode-secondary-background-color: #22292e;
     --darkmode-border-color: #39444d;
     --darkmode-text-color: #dedede;
     --darkmode-secondary-text-color: #ababab;
