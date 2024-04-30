@@ -133,6 +133,14 @@ hr {
     border-color: var(--site-border-color);
     border-width: 1px;
 }
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+a:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
 
 /* Projects */
 project-card {
