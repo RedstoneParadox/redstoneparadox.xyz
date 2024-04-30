@@ -61,6 +61,7 @@ header {
     width: fit-content;
     margin-top: auto;
     margin-bottom: auto;
+    display: none;
 }
 .site-icon {
     width: 24px;
@@ -72,23 +73,23 @@ header {
 /* Navigation */
 .header-nav {
     width: fit-content;
-    padding-top: 6px;
-    padding-bottom: 5px;
-    padding-left: 6px;
-    padding-right: 6px;
-    margin-right: 8px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 1px;
+    padding-right: 1px;
+    margin-right: 4px;
 }
 .nav-link {
     font-family: "Roboto", sans-serif;
-    font-size: large;
+    font-size: small;
     font-weight: 700;
     text-decoration: none;
     color: var(--site-secondary-text-color);
     text-align: center;
     transition: 0.3s;
-    padding: 8px;
+    padding: 6px;
     text-decoration: none;
-    border-radius: 24px;
+    border-radius: 16px;
     margin-left: 2px;
     margin-right: 2px;
 }
@@ -107,8 +108,8 @@ header {
 theme-toggle::part(button) {
     border: 0px solid white;
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: 12px;
+    height: 12px;
     padding: 0%;
     transition: 0.3s;
     background-color: var(--site-secondary-background-color);
@@ -268,31 +269,45 @@ div.right-border {
 
 /* Media Queries */
 
-/* Smaller than tablet */
-@media (width < 750px) {
-    h4 {
-        font-weight:500;
-    }
-}
 /* Larger than tablet */
 @media (min-width: 750px) {
+    header {
+        height: 32px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+    }
+
     .site-icon {
         width: 32px;
         height: 32px;
     }
     .site-name {
+        display: block;
         font-size: large;
+    }
+
+    /* Navigation */
+    .header-nav {
+        padding-top: 3px;
+        padding-bottom: 2px;
+        padding-left: 3px;
+        padding-right: 3px;
+        margin-right: 8px;
+    }
+    .nav-link {
+        font-family: "Roboto", sans-serif;
+        font-size: medium;
+        font-weight: 700;
+        text-align: center;
+        transition: 0.3s;
+        padding: 4px;
+        border-radius: 16px;
+        margin-left: 2px;
+        margin-right: 2px;
     }
 }
 /* Larger than desktop */
 @media (min-width: 1000px) {
-    .site-icon {
-        width: 40px;
-        height: 40px;
-    }
-}
-/* Larger than Desktop HD */
-@media (min-width: 1200px) {
     header {
         height: 40px;
         padding-top: 8px;
@@ -306,12 +321,38 @@ div.right-border {
     .site-name {
         font-size: x-large;
     }
+
+    theme-toggle::part(button) {
+        width: 40px;
+        height: 40px;
+    }
+    theme-toggle::part(icon) {
+        width: 24px;
+        height: 24px;
+        margin-top: 3px;
+    }
+
+    /* Navigation */
+    .header-nav {
+        padding-top: 6px;
+        padding-bottom: 5px;
+        padding-left: 6px;
+        padding-right: 6px;
+        margin-right: 8px;
+    }
+    .nav-link {
+        font-size: large;
+        padding: 8px;
+        border-radius: 24px;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+
     .copyright-box {
         padding-top: 8px;
     }
+}
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
 
-    .external-icon {
-        width: 16px;
-        height: 16px;
-    }
 }
