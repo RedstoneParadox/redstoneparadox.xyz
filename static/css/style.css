@@ -5,7 +5,7 @@ html, body {
     flex-direction: column;
 
     /* Lightmode colors */
-    --lightmode-background-color: #e6ebed;
+    --lightmode-background-color: #dfe4e6;
     --lightmode-secondary-background-color: #d0d9d9;
     --lightmode-border-color: #dce2e3;
     --lightmode-text-color: #222;
@@ -140,22 +140,16 @@ project-card {
     margin: 16px;
     width: 25%;
     padding: 16px;
-    border: 2px solid var(--site-secondary-background-color);
-    border-radius: 8px;
-    background-color: var(--site-border-color);
-    box-shadow: 0 1px 0px #00000011,
-                0 2px 0px #00000011,
-                0 3px 0px #00000011,
-                0 4px 0px #00000011;
+    background-color: var(--site-secondary-background-color);
+    /*box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);*/
+    border-top: solid 2px var(--accent-color);
 }
 .project-icon {
     width: 64px;
-    border: 2px solid var(--site-secondary-background-color);
-    border-radius: 6px;
+    border: 2px solid var(--site-border-color);
     background-color: var(--site-background-color);
 }
 .project-hr {
-    border-color: var(--site-secondary-background-color);
     margin: 16px;
 }
 .projects-box {

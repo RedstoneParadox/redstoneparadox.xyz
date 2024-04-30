@@ -16,14 +16,15 @@
         <hr class="project-hr">
         
         <div class="social-icon-box">
-            {% if project["github"] != "" %}
-            <a href={{ project["github"] }}>
-                <img src="{{ get_url(path="images/social/github.svg") | safe }}" class="social-icon" style="width:28px;height:28px;margin: 8px;">
+            {% if project.github %}
+            {%- set gh_url = project.github -%}
+            <a href="{{ project.github }}" class="social-link">
+                <img src="{{ get_url(path="images/social/github.svg") | safe }}" class="social-icon github">
             </a>
             {% endif %}
-            {% if project["modrinth"] != "" %}
-            <a href={{ project["modrinth"] }}>
-                <img src="{{ get_url(path="images/social/modrinth.svg") | safe }}" class="social-icon" style="width:28px;height:28px;margin: 8px;">
+            {% if project.modrinth %}
+            <a href="{{ project.modrinth }}" class="social-link">
+                <img src="{{ get_url(path="images/social/modrinth.svg") | safe }}" class="social-icon modrinth">
             </a>
             {% endif %}
         </div>
