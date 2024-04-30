@@ -10,12 +10,13 @@
         </span>
         </div>
     </div>
-    {{ post.description }} | <a href="{{ url }}">More →</a><br />
+    {{ post.description }} <br /> <a href="{{ url }}">Read More →</a><br />
+    <div style="margin-top: 8px;">
     {%- for name, taxon in post.taxonomies -%}
-    
         {%- for item in taxon -%}
-            <a class="tag">#{{ item }}</a>
+        <a class="tag">#{{ item }}</a>
         {%- endfor -%}
     {%- endfor -%}
+    </div>
     <hr style="margin-top: 8px;" />
 {%- endmacro post_preview -%}
