@@ -27,34 +27,32 @@ class ThemeToggle extends HTMLElement {
 
   constructor() {
     super();
-    this.icon = null
+    this.icon = document.createElement("img")
   }
 
   connectedCallback() {
     const self = this;
     const shadow = this.attachShadow({ mode: 'open' });
     const button = document.createElement("button")
-    this.icon = document.createElement("img")
 
     button.part = "button"
     this.icon.part = "icon"
 
+    shadow.appendChild(button);
+    button.appendChild(this.icon);
+
     const theme = getCookie("theme")
 
-    if (theme == "light") {
-      this.icon.src = this.getAttribute("dark-icon")
-      console.log("Here!");
-    } else if (theme == "dark") {
+    if (theme == "dark") {
       document.body.classList.toggle("dark")
       this.icon.src = this.getAttribute("light-icon")
+    } else {
+      this.icon.src = this.getAttribute("dark-icon")
     }
 
     button.addEventListener("click", function() {
       self.toggleTheme();
     })
-
-    shadow.appendChild(button);
-    button.appendChild(this.icon);
   }
 
   toggleTheme() {
