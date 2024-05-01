@@ -154,7 +154,7 @@ a:hover {
 project-card {
     display: block;
     margin: 16px;
-    width: 40%;
+    width: 100%;
     padding: 16px;
     background-color: var(--site-secondary-background-color);
     /*box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);*/
@@ -290,6 +290,10 @@ div.right-border {
     .site-name-box{
         display: block;
         font-size: large;
+    }
+
+    project-card {
+        width: 40%;
     }
 }
 
