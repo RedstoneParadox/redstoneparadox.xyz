@@ -3,8 +3,13 @@
 
 {% block content %}
 <div class="eight offset-by-two columns">
+    <div class="center-align">
+        <h4>My Blog</h4>
+        <a href="../tags">All Tags  →</a>
+    </div>
+    <hr />
     {%- for page in paginator.pages -%}
     {{ post::post_preview(post=page) }}
-{%- endfor -%}
+    {%- endfor -%}
 </div>
 {% endblock content %}

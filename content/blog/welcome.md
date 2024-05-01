@@ -4,7 +4,7 @@ description="A brief introduction to my new blog and a discussion of some other 
 date = 2024-04-27
 
 [taxonomies]
-tag = ["blog"]
+tags = ["blog"]
 +++
 
 You know, if you had told me 10 years ago that I would become a Minecraft modder, set up my own website with a maven repository and a blog - including setting up the backend myself via docker - I would have told you that you were crazy. Actually, I probably would have asked "Do I know you?", since, you know, I wouldn't have known who you were.

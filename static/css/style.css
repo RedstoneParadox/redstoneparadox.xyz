@@ -285,6 +285,10 @@ footer {
     width: fit-content;
 }
 
+.center-align {
+    text-align: center;
+}
+
 .shrink {
     width: fit-content;
 }
