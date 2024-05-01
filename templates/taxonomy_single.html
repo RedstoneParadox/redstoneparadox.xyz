@@ -4,5 +4,14 @@
 {%- block title -%}Tags{%- endblock title -%}
 
 {% block content %}
-
+<div class="eight offset-by-two columns">
+    <div class="center-align">
+        <h4>#{{term.name}}</h4>
+        <a href="../tags">All Tags  →</a>
+    </div>
+    <hr />
+    {%- for page in term.pages -%}
+    {{ post::post_preview(post=page) }}
+    {%- endfor -%}
+</div>
 {% endblock content %}

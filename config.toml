@@ -2,7 +2,7 @@
 base_url = "https://redstoneparadox.xyz"
 
 taxonomies = [
-    { name = "tags", feed=true }
+    { name = "tags", paginate_by=10, feed=true }
 ]
 
 # Whether to automatically compile all Sass files in the sass directory
