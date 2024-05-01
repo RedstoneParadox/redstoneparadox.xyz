@@ -13,7 +13,8 @@
         <div style="margin-top: 8px;">
         {%- for name, taxon in post.taxonomies -%}
             {%- for item in taxon -%}
-            <a class="tag">#{{ item }}</a>
+            {%- set tag_url = get_taxonomy_url(kind="tags", name=item) -%}
+            <a href="{{ tag_url }}" class="tag">#{{ item }}</a>
             {%- endfor -%}
         {%- endfor -%}
         </div>
