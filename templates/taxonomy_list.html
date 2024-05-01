@@ -5,7 +5,7 @@
 {% block content %}
 <div class="eight offset-by-two columns">
     <div class="center-align"><h1>All Tags</h1></div>
-    <hr />
+    <hr style="margin-top: 8px;margin-bottom: 8px;" />
     {% for tag in terms %}
     {%- set tag_url = get_url(path=tag.path) -%}
     <a href="{{ tag_url }}" class="tag">#{{ tag.name }}</a>

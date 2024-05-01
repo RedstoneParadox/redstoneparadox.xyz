@@ -9,7 +9,7 @@
         <h4>#{{term.name}}</h4>
         <a href="{{ get_url(path='tags') }}">All Tags  →</a>
     </div>
-    <hr />
+    <hr style="margin-top: 8px;margin-bottom: 8px;" />
     {%- for page in term.pages -%}
     {{ post::post_preview(post=page) }}
     {%- endfor -%}
