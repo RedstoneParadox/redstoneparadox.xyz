@@ -372,18 +372,6 @@ div.right-border {
     }
 
     /* Social Links */
-    .social-link {
-        display: block;
-        width: 28px;
-        height: 28px;
-        border-radius: 50%;
-        margin: 2px;
-    }
-    .social-icon {
-        width: 24px;
-        height: 24px;
-        margin: 4px;
-    }
     .social-icon-box {
         margin-right: 8px;
         padding-right: 8px;
