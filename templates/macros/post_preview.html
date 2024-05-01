@@ -1,22 +1,22 @@
 {%- macro post_preview(post) -%}
     {%- set url = get_url(path=post.path) -%}
-    <div class="row">
-        <div class="six columns">
-            <h5>{{ post.title }}</h5>
+    <div>
+        <div class="row">
+            <div class="post-title-box">
+                <h5>{{ post.title }}</h5>
+            </div>
+            <div class="post-preview-info-box">
+                {{ post.date | date(format="%B %e, %Y") }} <span class="post-read-time">{{ post.reading_time }} min read</span>
+            </div>
         </div>
-        <div class="six columns" style="text-align: right;">
-           <span class="secondary-text-color"> 
-            {{ post.date | date(format="%B %e, %Y") }} | {{ post.reading_time }} min read
-        </span>
-        </div>
-    </div>
-    {{ post.description }} <br /> <a href="{{ url }}">Read More →</a><br />
-    <div style="margin-top: 8px;">
-    {%- for name, taxon in post.taxonomies -%}
-        {%- for item in taxon -%}
-        <a class="tag">#{{ item }}</a>
+        {{ post.description }} <br /> <a href="{{ url }}">Read More →</a><br />
+        <div style="margin-top: 8px;">
+        {%- for name, taxon in post.taxonomies -%}
+            {%- for item in taxon -%}
+            <a class="tag">#{{ item }}</a>
+            {%- endfor -%}
         {%- endfor -%}
-    {%- endfor -%}
+        </div>
+        <hr style="margin-top: 8px;" />
     </div>
-    <hr style="margin-top: 8px;" />
 {%- endmacro post_preview -%}
