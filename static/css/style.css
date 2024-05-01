@@ -54,6 +54,9 @@ header {
     padding-top: 2px;
     padding-bottom: 2px;
 }
+.site-name-icon-box {
+    width: fit-content;
+}
 .site-name-box{
     font-family: "Roboto", sans-serif;
     font-size: medium;
@@ -249,11 +252,13 @@ footer {
     align-content: center;
     justify-content: center;
     width: fit-content;
-    border-bottom: 2px solid var(--site-border-color);
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 2px;
     margin-bottom: 2px;
+}
+.social-icon-box.border {
+    border-bottom: 2px solid var(--site-border-color);
 }
 
 /* Utils */
@@ -277,15 +282,22 @@ div.right-border {
 
 /* Media Queries */
 
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {
+    .site-name-icon-box {
+        width: 30%;
+    }
+    .site-name-box{
+        display: block;
+        font-size: large;
+    }
+}
+
 /* Larger than tablet */
 @media (min-width: 750px) {
     .site-icon {
         width: 32px;
         height: 32px;
-    }
-    .site-name-box{
-        display: block;
-        font-size: large;
     }
 
     /* Theme Toggle */
@@ -343,13 +355,16 @@ div.right-border {
     .social-icon-box {
         margin-right: 8px;
         padding-right: 8px;
-        border-bottom: 0px solid var(--site-border-color);
-        border-right: 2px solid var(--site-border-color);
         float: left;
         padding-bottom: 0px;
         margin-bottom: 0px;
     }
+    .social-icon-box.border {
+        border-bottom: 0px solid var(--site-border-color);
+        border-right: 2px solid var(--site-border-color);
+    }
 }
+
 /* Larger than desktop */
 @media (min-width: 1000px) {
     header {

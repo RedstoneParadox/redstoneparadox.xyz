@@ -1,7 +1,7 @@
 <footer>
     <div class="container">
       <div class="centered">
-        <div class="social-icon-box">
+        <div class="social-icon-box border">
         {%- set socials = load_data(path="socials.json") -%}
         {%- for link in socials -%}
             {%- set img_src = get_url(path=link.icon) -%}
