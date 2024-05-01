@@ -155,7 +155,7 @@ project-card {
     display: block;
     margin: 16px;
     width: 100%;
-    padding: 16px;
+    padding: 8px;
     background-color: var(--site-secondary-background-color);
     /*box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);*/
     border-top: solid 2px var(--accent-color);
@@ -166,12 +166,14 @@ project-card {
     background-color: var(--site-background-color);
 }
 .project-hr {
-    margin: 16px;
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
 .projects-box {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 /* Blog */
@@ -294,6 +296,8 @@ div.right-border {
 
     project-card {
         width: 40%;
+        padding: 16px;
+        margin: 16px;
     }
 }
 
