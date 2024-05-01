@@ -277,6 +277,9 @@ footer {
 .social-icon-box.border {
     border-bottom: 2px solid var(--site-border-color);
 }
+.social-icon-box.centered {
+    width: 100%;
+}
 
 /* Utils */
 .centered {
