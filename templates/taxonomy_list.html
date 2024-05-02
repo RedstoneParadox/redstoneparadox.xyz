@@ -14,7 +14,12 @@
                     <a href="{{ get_url(path=tag.path) }}" class="tag">#{{ tag.name }}</a>
                 </div>
                 <div class="secondary-text-color u-pull-right"  style="width: fit-content;">
-                    {{ tag.page_count }} post(s)
+                    {%- if tag.page_count == 1 -%}
+                    1 post
+                    {%- endif -%}
+                    {%- if tag.page_count > 1 -%}
+                    {{ tag.page_count }} posts
+                    {%- endif -%}
                 </div>
             </div>
             {% for page in tag.pages | slice(end=3) %}
