@@ -1,7 +1,7 @@
 +++
 title = "Home" 
 template = "index.html" 
-sort_by = "title" 
+sort_by = "date" 
 +++
 
 #### Welcome to my Website!
