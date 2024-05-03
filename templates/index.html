@@ -3,8 +3,9 @@
 
 {% block content %}
 <div class="eight offset-by-two columns">
+  <h4 class="center-align">Welcome to my Website!</h4>
   {{ section.content | safe }}
-  <h4>Latest Blog Post</h4>
+  <h4 class="center-align">Latest Blog Post</h4>
   {%- set blog = get_section(path="blog/_index.md") -%}
   <hr class="small-margins" />
   <div>
