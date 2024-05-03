@@ -67,6 +67,7 @@ header {
     width: fit-content;
     padding-top: 2px;
     display: none;
+    padding-left: 8px;
 }
 .site-icon {
     width: 32px;
