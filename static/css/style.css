@@ -380,7 +380,7 @@ div.right-border {
         width: 40%;
     }
     .post-read-time::before {
-        content: " | ";
+        content: "| ";
         white-space: pre;
     }
 
