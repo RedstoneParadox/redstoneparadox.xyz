@@ -4,10 +4,9 @@
 {% block content %}
 <div class="eight offset-by-two columns">
   {{ section.content | safe }}
-  <hr />
   <h4>Latest Blog Post</h4>
   {%- set blog = get_section(path="blog/_index.md") -%}
-  <hr />
+  <hr class="small-margins" />
   <div>
     {{ post::post_preview(post=blog.pages | first) }}
   </div>

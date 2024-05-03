@@ -143,6 +143,10 @@ hr {
     border: 0;
     border-top: 2px solid var(--site-border-color);
 }
+hr.small-margins {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
 a {
     color: var(--accent-color);
     text-decoration: none;

@@ -7,7 +7,7 @@
         <h4>My Blog</h4>
         <a href="{{ get_url(path='tags') }}">All Tags  →</a>
     </div>
-    <hr style="margin-top: 8px;margin-bottom: 8px;" />
+    <hr class="small-margins" />
     {%- for page in paginator.pages -%}
     {{ post::post_preview(post=page) }}
     {%- endfor -%}
