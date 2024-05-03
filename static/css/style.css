@@ -268,9 +268,18 @@ footer {
 .social-icon.discord:hover {
     filter: invert(33%) sepia(94%) saturate(2801%) hue-rotate(226deg) brightness(102%) contrast(90%);
 }
+.social-icon.rss {
+    width: 16px;
+    height: 16px;
+    margin: 4px;
+}
+.social-icon.rss:hover {
+    filter: invert(70%) sepia(25%) saturate(5518%) hue-rotate(360deg) brightness(103%) contrast(105%);
+}
 .social-icon:hover {
     filter: var(--accent-filter);
 }
+
 .social-icon-box {
     display: flex;
     flex-direction: row;
@@ -457,6 +466,11 @@ div.right-border {
         width: 28px;
         height: 28px;
         margin: 4px;
+    }
+    .social-icon.rss {
+        width: 20px;
+        height: 20px;
+        margin: 8px;
     }
     .social-icon-box {
         margin-right: 8px;
