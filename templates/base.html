@@ -5,7 +5,7 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>{{ section.title }} - RedstoneParadox's Site</title>
+  <title>{%- block title -%}{{ section.title }}{%- endblock title -%}</title>
   <meta name="description" content="">
   <meta name="author" content="RedstoneParadox">
 
@@ -34,63 +34,18 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script type="text/javascript" src="{{ get_url(path="script/main.js") | safe }}"></script>
 
-  {% block hed %}{% endblock head %}
+  {% block head %}{% endblock head %}
 
 </head>
 <body>
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<header>
-  <div class="header-top">
-    <img src="{{ get_url(path="images/redstone_torch.png") | safe }}" class="site-icon">
-    <span class="site-name">Redstone Paradox</span>
-    <button onclick="toggleDarkMode()" class="theme-toggle" title="Toggle Theme">
-      <div class="theme-toggle-thumb start">
-        <img src="{{ get_url(path="images/theme/sun-fill.svg") | safe }}" class="theme-icon">
-      </button>
-    </a>
-  </div>
-  <div class="header-nav">
-    {%- set root = get_section(path="_index.md") -%}
-    {%- set classes = "nav-link" %}
-    {% if root.title == section.title %}
-    {%- set classes = "nav-link selected" %}
-    {% endif %}
-    <a href="{{ root.path }}" class="{{ classes }}">{{ root.title }}</a>
-    {% for subsection_path in root.subsections %}
-    {%- set subsection = get_section(path=subsection_path) -%}
-      {%- set classes = "nav-link" %}
-      {% if subsection.title == section.title %}
-      {%- set classes = "nav-link selected" %}
-      {% endif %}
-    <a href="{{ subsection.path }}" class="{{ classes }}">{{ subsection.title }}</a>
-    {% endfor %}
-    <a href="https://maven.redstoneparadox.xyz" class="nav-link" target="_blank">Maven</a>
-  </div>
-</header>
-<div class="container" style="margin-top: 5%;">
+{% include "partials/header.html" %}
+<div class="container content">
   {% block content %} {% endblock %}
 </div>
-<footer>
-  <div class="container">
-    <div class="six columns" style="margin-top: 5%;">
-      <p>
-        <span style="font-weight: 700;">Copyright &copy; RedstoneParadox 2024<br><br> </span>
-        The Redstone Torch is a Copyright of Mojang AB, who have not authorized or endorsed the operation of this site.<br><br>
-        All logos used on this site are property of their respective owners.
-      </p>
-    </div>
-    <div class="six columns" style="margin-top: 5%;">
-      <div class="social-icon-box">
-        <a href="https://github.com/RedstoneParadox"><img src="{{ get_url(path="images/social/github.svg") | safe }}" class="social-icon" style="width:28px;height:28px;margin: 8px;"></a>
-        <a href="https://www.youtube.com/@redstoneparadox"><img src="{{ get_url(path="images/social/youtube.svg") | safe }}" class="social-icon" style="width:28px;height:28px;margin: 8px;"></a>
-        <a href="https://modrinth.com/user/RedstoneParadox"><img src="{{ get_url(path="images/social/modrinth.svg") | safe }}" class="social-icon" style="width:28px;height:28px;margin: 8px;"></a>
-        <a href="https://discord.gg/crZpcjtdJR"><img src="{{ get_url(path="images/social/discord.svg") | safe }}" class="social-icon" style="width:28px;height:28px;margin: 8px;"></a>
-      </div>
-    </div>
-  </div>
-</footer>
+{% include "partials/footer.html" %}
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->

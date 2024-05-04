@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% import "macros/post_preview.html" as post %}
+
+{% block content %}
+<div class="eight offset-by-two columns">
+    <div class="center-align">
+        <h4>My Blog</h4>
+        <a href="{{ get_url(path='tags') }}">All Tags  →</a>
+    </div>
+    <hr class="small-margins" />
+    {%- for page in paginator.pages -%}
+    {{ post::post_preview(post=page) }}
+    {%- endfor -%}
+</div>
+{% endblock content %}

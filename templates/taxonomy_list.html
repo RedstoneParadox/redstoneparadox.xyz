@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{%- block title -%}Tags{%- endblock title -%}
+
+{% block content %}
+<div class="eight offset-by-two columns">
+    <div class="center-align"><h4>All Tags</h4></div>
+    <hr class="small-margins" />
+    <div class="projects-box">
+        {% for tag in terms %}
+        <div class="tag-card">
+            <div class="row">
+                <div class="u-pull-left" style="width: fit-content;">
+                    <a href="{{ get_url(path=tag.path) }}" class="tag">#{{ tag.name }}</a>
+                </div>
+                <div class="secondary-text-color u-pull-right"  style="width: fit-content;">
+                    {%- if tag.page_count == 1 -%}
+                    1 post
+                    {%- endif -%}
+                    {%- if tag.page_count > 1 -%}
+                    {{ tag.page_count }} posts
+                    {%- endif -%}
+                </div>
+            </div>
+            <hr style="margin-top: 8px;margin-bottom: 8px;" />
+            {% for page in tag.pages | slice(end=3) %}
+            <a href="{{ get_url(path=page.path)}}">{{ page.title }}</a> | {{ page.date | date(format="%B %e, %Y") }}<br />
+            {% endfor %}
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock content %}

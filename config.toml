@@ -1,6 +1,20 @@
 # The URL the site will be built for
 base_url = "https://redstoneparadox.xyz"
 
+# A list of glob patterns specifying asset files to ignore when the content
+# directory is processed. Defaults to none, which means that all asset files are
+# copied over to the `public` directory.
+# Example:
+#     ignored_content = ["*.{graphml,xlsx}", "temp.*", "**/build_folder"]
+ignored_content = ["*.json"]
+
+# When set to "true", a feed is automatically generated.
+generate_feed = true
+
+taxonomies = [
+    { name = "tags", paginate_by=10 }
+]
+
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
 

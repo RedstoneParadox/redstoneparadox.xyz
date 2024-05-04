@@ -1,10 +1,8 @@
 +++
 title = "Home" 
 template = "index.html" 
-sort_by = "title" 
+sort_by = "date" 
 +++
-
-#### Welcome to my Website!
 
 I am RedstoneParadox, a hobbyist programmer from a place that hopefully exists.
 
