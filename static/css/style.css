@@ -155,6 +155,9 @@ a:hover {
     color: var(--accent-color);
     text-decoration: underline;
 }
+a.extern::after {
+    content: " ↗";
+}
 
 /* Projects */
 project-card {
