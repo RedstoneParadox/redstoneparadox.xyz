@@ -4,6 +4,10 @@ template = "index.html"
 sort_by = "date" 
 +++
 
+{% align(align="center") %}
+#### Welcome to my Website!
+{% end %}
+
 I am RedstoneParadox, a hobbyist programmer from a place that hopefully exists.
 
 I started out modding minecraft way back in 2017 and since then, I've made several mods for a few different games along with a number of other programming projects, including a bit of game dev.
