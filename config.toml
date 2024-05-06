@@ -28,3 +28,9 @@ highlight_code = true
 
 [extra]
 # Put all your custom variables here
+socials = [
+        { name="Github", url="https://github.com/RedstoneParadox" },
+        { name="YouTube", url="https://github.com/RedstoneParadox" },
+        { name="Modrinth", url="https://github.com/RedstoneParadox" },
+        { name="Discord", url="https://github.com/RedstoneParadox" },
+]

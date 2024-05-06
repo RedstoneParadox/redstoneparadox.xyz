@@ -1,10 +1,11 @@
 <footer>
   <div class="centered">
     <div class="social-icon-box border">
-    {%- set socials = load_data(path="socials.json") -%}
+    {%- set socials = config.extra.socials -%}
     {%- for link in socials -%}
-        <a href="{{ link.url }}" class="social-link {{ link.class }}" title="{{ link.title }}">
-          <img src="{{ get_url(path=link.icon) }}" class="social-icon" />
+        <a href="{{ link.url }}" class="social-link {{ link.name | lower }}" title="{{ link.name }}">
+          {% set icon_path = "images/social/" ~ link.name ~ ".svg" %}
+          <img src="{{ get_url(path=icon_path) }}" class="social-icon" />
         </a>
     {%- endfor -%}
     <a href="{{ get_url(path='atom.xml') }}" class="social-link rss" title="Atom Feed">
