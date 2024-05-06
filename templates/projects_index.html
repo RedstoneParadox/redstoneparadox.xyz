@@ -1,34 +1,48 @@
 {% extends "base.html" %}
 
+{% macro card(project) %}
+<project-card>
+    <img src="{{ project.icon }}" class="project-icon" /><br/>
+    <span style="font-weight:700;">{{ project["name"] }}</span><br/>
+    <hr class="project-hr">
+    {{ project["desc"] }}
+    <hr class="project-hr">
+    
+    <div class="social-icon-box centered">
+        {% if project.github %}
+        {%- set gh_url = project.github -%}
+        <a href="{{ project.github }}" class="social-link">
+            <img src="{{ get_url(path='images/social/github.svg') | safe }}" class="social-icon github">
+        </a>
+        {% endif %}
+        {% if project.modrinth %}
+        <a href="{{ project.modrinth }}" class="social-link">
+            <img src="{{ get_url(path='images/social/modrinth.svg') | safe }}" class="social-icon modrinth">
+        </a>
+        {% endif %}
+    </div>
+
+</project-card>
+{% endmacro card %}
+
 {% block head %}
-    <link rel="stylesheet" type="text/css" href="{{ get_url(path="css/card.css") | safe }}">
+    <link rel="stylesheet" type="text/css" href="{{ get_url(path='css/card.css') | safe }}">
 {% endblock head %}
 
 {% block content %}
 {% set data = load_data(path="content/projects/data.json") %}
+<h4 class="center-align">Minecraft Mods</h4>
+<hr class="small-margins">
 <div class="projects-box">
-{% for project in data %}
-    <project-card>
-        <img src="{{ project["icon"] }}" class="project-icon" /><br/>
-        <span style="font-weight:700;">{{ project["name"] }}</span><br/>
-        <hr class="project-hr">
-        {{ project["desc"] }}
-        <hr class="project-hr">
-        
-        <div class="social-icon-box">
-            {% if project["github"] != "" %}
-            <a href={{ project["github"] }}>
-                <img src="{{ get_url(path="images/social/github.svg") | safe }}" class="social-icon" style="width:28px;height:28px;margin: 8px;">
-            </a>
-            {% endif %}
-            {% if project["modrinth"] != "" %}
-            <a href={{ project["modrinth"] }}>
-                <img src="{{ get_url(path="images/social/modrinth.svg") | safe }}" class="social-icon" style="width:28px;height:28px;margin: 8px;">
-            </a>
-            {% endif %}
-        </div>
-
-    </project-card>
+{% for project in data.minecraft %}
+    {{ self::card(project=project) }}
+{% endfor %}
+</div>
+<h4 class="center-align">Web Development</h4>
+<hr class="small-margins">
+<div class="projects-box">
+{% for project in data.web %}
+    {{ self::card(project=project) }}
 {% endfor %}
 </div>
 {% endblock content %}

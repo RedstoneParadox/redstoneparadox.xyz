@@ -1,0 +1,37 @@
+<header class="row">
+    <div class="container">
+      <div class="site-name-icon-box u-pull-left">
+        {%- set pfp_url = get_url(path="images/redstone_torch.png") -%}
+        <img src="{{ pfp_url }}" class="site-icon u-pull-left" alt="Website Icon">
+        <div class="site-name-box u-pull-left">Redstone Paradox</div>
+      </div>
+      <div class="u-pull-right" style="width: fit-content;">
+        <div class="header-nav u-pull-left right-border">
+          {%- set navigation = load_data(path="navigation.json") -%}
+          {%- for link in navigation.site -%}
+            {%- set url = get_url(path=link.path) -%}
+            {%- set text = link.text -%}
+            {%- set class = "nav-link" -%}
+
+            {%- if page and link.path == page.colocated_path -%}
+              {%- set class = "nav-link current" -%}
+            {%- endif -%}
+            {%- if section and section.path == link.path -%}
+              {%- set class = "nav-link current" -%}
+            {%- endif -%}
+
+            <a href="{{ url }}" class="{{ class }}">{{ text }}</a>
+          {%- endfor -%}
+          {%- for link in navigation.external -%}
+            {%- set text = link.text -%}
+            {%- set class = "nav-link" -%}
+
+            <a href="{{ link.url }}" class="{{ class }}">{{ text }}</a>
+          {%- endfor -%}
+        </div>
+        {%- set light_icon = get_url(path="images/theme/sun-fill.svg") -%}
+        {%- set dark_icon = get_url(path="images/theme/moon-fill.svg") -%}
+        <theme-toggle class="theme-toggle u-pull-right" title="Toggle Theme" light-icon="{{ light_icon }}" dark-icon="{{ dark_icon }}" />
+      </div>
+    </div>
+  </header>

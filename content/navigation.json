@@ -1,0 +1,22 @@
+{
+    "site": [
+        {
+            "text": "Home",
+            "path": "/"
+        },
+        {
+            "text": "Projects",
+            "path": "/projects/"
+        },
+        {
+            "text": "Blog",
+            "path": "/blog/"
+        }
+    ],
+    "external": [
+        {
+            "text": "Maven",
+            "url": "https://maven.redstoneparadox.xyz"
+        }
+    ]
+}
