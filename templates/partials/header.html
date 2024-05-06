@@ -9,24 +9,10 @@
         <div class="header-nav u-pull-left">
           {%- set navigation = load_data(path="navigation.json") -%}
           {%- for link in navigation.site -%}
-            {%- set url = get_url(path=link.path) -%}
-            {%- set text = link.text -%}
-            {%- set class = "nav-link" -%}
-
-            {%- if page and link.path == page.colocated_path -%}
-              {%- set class = "nav-link current" -%}
-            {%- endif -%}
-            {%- if section and section.path == link.path -%}
-              {%- set class = "nav-link current" -%}
-            {%- endif -%}
-
-            <a href="{{ url }}" class="{{ class }}">{{ text }}</a>
+            <a href="{{ get_url(path=link.path) }}" class="nav-link">{{ link.text }}</a>
           {%- endfor -%}
           {%- for link in navigation.external -%}
-            {%- set text = link.text -%}
-            {%- set class = "nav-link" -%}
-
-            <a href="{{ link.url }}" class="{{ class }}">{{ text }}</a>
+            <a href="{{ link.url }}" class="nav-link">{{ link.text }}</a>
           {%- endfor -%}
         </div>
         {%- set light_icon = get_url(path="images/theme/sun-fill.svg") -%}

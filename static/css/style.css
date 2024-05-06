@@ -105,11 +105,6 @@ header {
     margin-left: 4px;
     margin-right: 4px;
 }
-.nav-link.current {
-    background-color: var(--site-border-color);
-    color: var(--accent-color);
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
-}
 .nav-link:hover {
     background-color: var(--site-border-color);
     color: var(--accent-color);
