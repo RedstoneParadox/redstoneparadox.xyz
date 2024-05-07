@@ -7,12 +7,13 @@
       </div>
       <div class="u-pull-right" style="width: fit-content;">
         <div class="header-nav u-pull-left">
-          {%- set navigation = load_data(path="navigation.json") -%}
-          {%- for link in navigation.site -%}
-            <a href="{{ get_url(path=link.path) }}" class="nav-link">{{ link.text }}</a>
-          {%- endfor -%}
-          {%- for link in navigation.external -%}
-            <a href="{{ link.url }}" class="nav-link">{{ link.text }}</a>
+          {%- for link in config.extra.nav_links -%}
+          {%- if link.url -%}
+          <a href="{{ link.url }}" class="nav-link">{{ link.name }}</a>
+          {%- endif -%}
+          {%- if link.path -%}
+          <a href="{{ get_url(path=link.path) }}" class="nav-link">{{ link.name }}</a>
+          {%- endif -%}
           {%- endfor -%}
         </div>
         {%- set light_icon = get_url(path="images/theme/sun-fill.svg") -%}

@@ -34,3 +34,10 @@ socials = [
         { name="Modrinth", url="https://github.com/RedstoneParadox" },
         { name="Discord", url="https://github.com/RedstoneParadox" },
 ]
+
+nav_links = [
+    { name="Home", path="/" },
+    { name="Projects", path="/projects/" },
+    { name="Blog", path="/blog/" },
+    { name="Maven", url="https://maven.redstoneparadox.xyz"}
+]
