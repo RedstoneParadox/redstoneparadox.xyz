@@ -19,18 +19,18 @@ build_search_index = false
 # Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
 highlight_code = true
 
-[extra]
+[extra.nav]
 # Put all your custom variables here
+site = [
+    { name="Home", path="/" },
+    { name="Projects", path="/projects/" },
+    { name="Blog", path="/blog/" },
+    { name="Maven", url="https://maven.redstoneparadox.xyz"}
+]
+
 socials = [
     { name="Github", url="https://github.com/RedstoneParadox", title="My GitHub Profile" },
     { name="YouTube", url="https://www.youtube.com/@redstoneparadox", title="My YouTube Channel" },
     { name="Modrinth", url="https://modrinth.com/user/RedstoneParadox", title="My Modrinth Profile" },
     { name="Discord", url="https://discord.gg/crZpcjtdJR", title="Join my Discord" },
-]
-
-nav_links = [
-    { name="Home", path="/" },
-    { name="Projects", path="/projects/" },
-    { name="Blog", path="/blog/" },
-    { name="Maven", url="https://maven.redstoneparadox.xyz"}
 ]

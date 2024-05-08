@@ -1,7 +1,7 @@
 <footer>
   <div class="centered">
     <div class="social-icon-box border">
-    {%- set socials = config.extra.socials -%}
+    {%- set socials = config.extra.nav.socials -%}
     {%- for link in socials -%}
         <a href="{{ link.url }}" class="social-link {{ link.name | lower }}" title="{{ link.title }}">
           {% set icon_path = "images/social/" ~ link.name ~ ".svg" %}
