@@ -8,6 +8,7 @@ html, body {
     --lightmode-background-color: #e1e6e8;
     --lightmode-secondary-background-color: #cbd4d4;
     --lightmode-border-color: #d5ddde;
+    --lightmode-button-select-color: #c1c9c9;
     --lightmode-text-color: #222;
     --lightmode-secondary-text-color: #555;
     --lightmode-secondary-text-filter: invert(28%) sepia(0%) saturate(3625%) hue-rotate(150deg) brightness(79%) contrast(61%);
@@ -16,6 +17,7 @@ html, body {
     --darkmode-background-color: #181e21;
     --darkmode-secondary-background-color: #22292e;
     --darkmode-border-color: #39444d;
+    --darkmode-button-select-color: #161d1f;
     --darkmode-text-color: #dedede;
     --darkmode-secondary-text-color: #ababab;
     --darkmode-secondary-text-filter: invert(68%) sepia(0%) saturate(1151%) hue-rotate(138deg) brightness(99%) contrast(96%);
@@ -28,6 +30,7 @@ body {
     --site-background-color: var(--lightmode-background-color);
     --site-secondary-background-color: var(--lightmode-secondary-background-color);
     --site-border-color: var(--lightmode-border-color);
+    --site-button-select-color: var(--lightmode-button-select-color);
     --site-secondary-text-color: var(--lightmode-secondary-text-color);
     --site-secondary-text-filter: var(--lightmode-secondary-text-filter);
 
@@ -38,6 +41,7 @@ body {
     --site-background-color: var(--darkmode-background-color);
     --site-secondary-background-color: var(--darkmode-secondary-background-color);
     --site-border-color: var(--darkmode-border-color);
+    --site-button-select-color: var(--darkmode-button-select-color);
     --site-secondary-text-color: var(--darkmode-secondary-text-color);
     --site-secondary-text-filter: var(--darkmode-secondary-text-filter);
 
@@ -98,7 +102,7 @@ header {
     text-decoration: none;
     color: var(--site-secondary-text-color);
     text-align: center;
-    transition: 0.3s;
+    transition: 0.2s;
     padding: 4px;
     text-decoration: none;
     border-radius: 16px;
@@ -111,6 +115,10 @@ header {
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
     text-decoration: none;
 }
+.nav-link:active {
+    background-color: var(--site-button-select-color);
+}
+
 
 /* Theme Toggle */
 theme-toggle::part(button) {
@@ -119,13 +127,16 @@ theme-toggle::part(button) {
     width: 32px;
     height: 32px;
     padding: 0%;
-    transition: 0.3s;
+    transition: 0.2s;
     background-color: var(--site-secondary-background-color);
 }
 theme-toggle::part(button):hover {
     background-color: var(--site-border-color);
     color: var(--accent-color);
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+theme-toggle::part(button):active {
+    background-color: var(--site-button-select-color);
 }
 theme-toggle::part(icon) {
     filter: var(--site-secondary-text-filter);
@@ -211,7 +222,7 @@ project-card {
     text-decoration: none;
     color: var(--site-secondary-text-color);
     text-align: center;
-    transition: 0.3s;
+    transition: 0.2s;
     padding: 4px;
     text-decoration: none;
     border-radius: 16px;
@@ -223,6 +234,9 @@ project-card {
     color: var(--accent-color);
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
     text-decoration: none;
+}
+.tag:active {
+    background-color: var(--site-button-select-color);
 }
 .tag-card {
     margin: 16px;
@@ -248,7 +262,7 @@ footer {
 /* Social Links */
 .social-link {
     display: block;
-    transition: 0.3s;
+    transition: 0.2s;
     width: 28px;
     height: 28px;
     border-radius: 50%;
@@ -258,6 +272,9 @@ footer {
 .social-link:hover {
     background-color: var(--site-border-color);
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+.social-link:active {
+    background-color: var(--site-button-select-color);
 }
 .social-link.github:hover {
     --icon-filter: invert(38%) sepia(11%) saturate(1981%) hue-rotate(222deg) brightness(94%) contrast(95%);
