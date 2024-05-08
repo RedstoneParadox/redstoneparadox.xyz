@@ -46,8 +46,10 @@ class ThemeToggle extends HTMLElement {
     if (theme == "dark") {
       document.body.classList.toggle("dark")
       this.icon.src = this.getAttribute("light-icon")
+      this.icon.alt = "Change to Light Theme"
     } else {
       this.icon.src = this.getAttribute("dark-icon")
+      this.icon.alt = "Change to Dark Theme"
     }
 
     button.addEventListener("click", function() {
