@@ -3,7 +3,7 @@
     <div class="social-icon-box border">
     {%- set socials = config.extra.socials -%}
     {%- for link in socials -%}
-        <a href="{{ link.url }}" class="social-link {{ link.name | lower }}" title="{{ link.name }}">
+        <a href="{{ link.url }}" class="social-link {{ link.name | lower }}" title="{{ link.title }}">
           {% set icon_path = "images/social/" ~ link.name ~ ".svg" %}
           <img src="{{ get_url(path=icon_path) }}" class="social-icon" alt="{{ link.name }}" />
         </a>

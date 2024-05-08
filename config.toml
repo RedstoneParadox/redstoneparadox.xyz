@@ -22,10 +22,10 @@ highlight_code = true
 [extra]
 # Put all your custom variables here
 socials = [
-        { name="Github", url="https://github.com/RedstoneParadox" },
-        { name="YouTube", url="https://www.youtube.com/@redstoneparadox" },
-        { name="Modrinth", url="https://modrinth.com/user/RedstoneParadox" },
-        { name="Discord", url="https://discord.gg/crZpcjtdJR" },
+    { name="Github", url="https://github.com/RedstoneParadox", title="My GitHub Profile" },
+    { name="YouTube", url="https://www.youtube.com/@redstoneparadox", title="My YouTube Channel" },
+    { name="Modrinth", url="https://modrinth.com/user/RedstoneParadox", title="My Modrinth Profile" },
+    { name="Discord", url="https://discord.gg/crZpcjtdJR", title="Join my Discord" },
 ]
 
 nav_links = [
