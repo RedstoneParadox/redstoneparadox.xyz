@@ -25,10 +25,6 @@
 </project-card>
 {% endmacro card %}
 
-{% block head %}
-    <link rel="stylesheet" type="text/css" href="{{ get_url(path='css/card.css') | safe }}">
-{% endblock head %}
-
 {% block content %}
 {% set data = load_data(path="content/projects/data.json") %}
 <h4 class="center-align">Minecraft Mods</h4>
