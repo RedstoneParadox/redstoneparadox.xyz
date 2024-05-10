@@ -11,13 +11,13 @@
     <div class="social-icon-box centered">
         {% if project.github %}
         {%- set gh_url = project.github -%}
-        <a href="{{ project.github }}" class="social-link">
-            <img src="{{ get_url(path='images/social/github.svg') | safe }}" class="social-icon github">
+        <a href="{{ project.github }}" class="social-link github" title = "GitHub Repo">
+            <img src="{{ get_url(path='images/social/github.svg') | safe }}" class="social-icon" alt="GitHub">
         </a>
         {% endif %}
         {% if project.modrinth %}
-        <a href="{{ project.modrinth }}" class="social-link">
-            <img src="{{ get_url(path='images/social/modrinth.svg') | safe }}" class="social-icon modrinth">
+        <a href="{{ project.modrinth }}" class="social-link modrinth" title="Go to Modrinth project page">
+            <img src="{{ get_url(path='images/social/modrinth.svg') | safe }}" class="social-icon" alt="modrinth">
         </a>
         {% endif %}
     </div>
