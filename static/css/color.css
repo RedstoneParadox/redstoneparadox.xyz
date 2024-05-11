@@ -42,3 +42,28 @@ body {
 
     color: var(--darkmode-text-color);
 }
+
+@media (prefers-color-scheme: light) {
+    .default-theme {
+        --site-background-color: var(--lightmode-background-color);
+        --site-secondary-background-color: var(--lightmode-secondary-background-color);
+        --site-border-color: var(--lightmode-border-color);
+        --site-button-select-color: var(--lightmode-button-select-color);
+        --site-secondary-text-color: var(--lightmode-secondary-text-color);
+        --site-secondary-text-filter: var(--lightmode-secondary-text-filter);
+    
+        color: var(--lightmode-text-color);
+    }
+}
+@media (prefers-color-scheme: dark) {
+    .default-theme {
+        --site-background-color: var(--darkmode-background-color);
+        --site-secondary-background-color: var(--darkmode-secondary-background-color);
+        --site-border-color: var(--darkmode-border-color);
+        --site-button-select-color: var(--darkmode-button-select-color);
+        --site-secondary-text-color: var(--darkmode-secondary-text-color);
+        --site-secondary-text-filter: var(--darkmode-secondary-text-filter);
+    
+        color: var(--darkmode-text-color);
+    }
+}
