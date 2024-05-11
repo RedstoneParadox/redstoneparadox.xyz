@@ -9,16 +9,16 @@
         <div class="header-nav u-pull-left">
           {%- for link in config.extra.nav.site -%}
           {%- if link.url -%}
-          <a href="{{ link.url }}" class="nav-link">{{ link.name }}</a>
+          <a href="{{ link.url }}" class="btn nav-link">{{ link.name }}</a>
           {%- endif -%}
           {%- if link.path -%}
-          <a href="{{ get_url(path=link.path) }}" class="nav-link">{{ link.name }}</a>
+          <a href="{{ get_url(path=link.path) }}" class="btn nav-link">{{ link.name }}</a>
           {%- endif -%}
           {%- endfor -%}
         </div>
         {%- set light_icon = get_url(path="images/theme/sun-fill.svg") -%}
         {%- set dark_icon = get_url(path="images/theme/moon-fill.svg") -%}
-        <theme-toggle class="theme-toggle u-pull-right" title="Toggle Theme" light-icon="{{ light_icon }}" dark-icon="{{ dark_icon }}" />
+        <theme-toggle class="theme-toggle u-pull-right has-button" title="Toggle Theme" light-icon="{{ light_icon }}" dark-icon="{{ dark_icon }}" />
       </div>
     </div>
   </header>

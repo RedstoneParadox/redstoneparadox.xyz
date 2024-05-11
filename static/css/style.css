@@ -5,6 +5,41 @@ html, body {
     flex-direction: column;
 }
 
+/* UI */
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+a:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+a.extern::after {
+    content: " ↗";
+}
+
+.has-button::part(button),
+.btn {
+    font-family: "Roboto", sans-serif;
+    font-size: medium;
+    font-weight: 700;
+    color: var(--site-secondary-text-color);
+    background-color: var(--site-secondary-background-color);
+    text-align: center;
+    transition: 0.2s;
+}
+.has-button::part(button):hover,
+.btn:hover {
+    background-color: var(--site-border-color);
+    color: var(--accent-color);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+.has-button::part(button):active,
+.btn:active {
+    background-color: var(--site-button-select-color);
+    box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
 /* Header */
 header {
     background-color: var(--site-secondary-background-color);
@@ -52,31 +87,13 @@ header {
         border-right: 2px solid var(--site-border-color);
     }
 }
-.nav-link {
-    font-family: "Roboto", sans-serif;
-    font-size: medium;
-    font-weight: 700;
-    text-decoration: none;
-    color: var(--site-secondary-text-color);
-    text-align: center;
-    transition: 0.2s;
+.btn.nav-link {
     padding: 4px;
-    text-decoration: none;
     border-radius: 16px;
     margin-left: 4px;
     margin-right: 4px;
-}
-.nav-link:hover {
-    background-color: var(--site-border-color);
-    color: var(--accent-color);
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
     text-decoration: none;
 }
-.nav-link:active {
-    background-color: var(--site-button-select-color);
-    box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.1);
-}
-
 
 /* Theme Toggle */
 theme-toggle::part(button) {
@@ -85,17 +102,6 @@ theme-toggle::part(button) {
     width: 32px;
     height: 32px;
     padding: 0%;
-    transition: 0.2s;
-    background-color: var(--site-secondary-background-color);
-}
-theme-toggle::part(button):hover {
-    background-color: var(--site-border-color);
-    color: var(--accent-color);
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
-}
-theme-toggle::part(button):active {
-    background-color: var(--site-button-select-color);
-    box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.1);
 }
 theme-toggle::part(icon) {
     filter: var(--site-secondary-text-filter);
@@ -116,17 +122,6 @@ hr {
 hr.small-margins {
     margin-top: 8px;
     margin-bottom: 8px;
-}
-a {
-    color: var(--accent-color);
-    text-decoration: none;
-}
-a:hover {
-    color: var(--accent-color);
-    text-decoration: underline;
-}
-a.extern::after {
-    content: " ↗";
 }
 
 /* Projects */
@@ -261,7 +256,6 @@ footer {
     height: 16px;
     margin: 4px;
 }
-
 
 .social-icon-box {
     display: flex;
@@ -429,7 +423,7 @@ div.right-border {
         padding-right: 6px;
         margin-right: 8px;
     }
-    .nav-link {
+    .btn.nav-link {
         font-size: large;
         padding: 8px;
         border-radius: 24px;
