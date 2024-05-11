@@ -209,10 +209,9 @@ project-card {
 /* Footer */
 footer {
     width: 100%;
-    margin-top: 2%;
     background-color: var(--site-secondary-background-color);
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-top: 4px;
+    min-height: 42px;
 }
 .copyright-box {
     color: var(--site-secondary-text-color);
@@ -226,7 +225,6 @@ footer {
     width: 28px;
     height: 28px;
     border-radius: 50%;
-    margin: 4px;
     --icon-filter: var(--site-secondary-text-filter);
 }
 .social-link:hover {
