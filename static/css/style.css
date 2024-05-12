@@ -1,3 +1,5 @@
+@import url("color.css");
+
 /* Page Setup and Variables */
 html, body {
     height: 100%;
@@ -14,6 +16,9 @@ a:hover {
     color: var(--accent-color);
     text-decoration: underline;
 }
+a:active {
+    color: var(--site-secondary-text-color);
+}
 /* Credit: Duckquill */
 a.extern::after {
 	-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' %3E%3Cpath d='m6 6 5-5M7 1h4v4M4 2H3a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h5a2 2 0 0 0 2-2V8' style='fill:none;stroke:black;stroke-linejoin:round;stroke-linecap:round;stroke-width:2;stroke-dasharray:none'/%3E%3C/svg%3E");
@@ -25,6 +30,9 @@ a.extern::after {
 	width: 12px;
 	height: 12px;
 	content: "";
+}
+a.extern:active:after {
+    background-color: var(--site-secondary-text-color);
 }
 
 .has-button::part(button),
