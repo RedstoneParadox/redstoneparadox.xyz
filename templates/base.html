@@ -38,7 +38,11 @@
   {% block head %}{% endblock head %}
 
 </head>
-<body class="default-theme">  
+<body class="default-theme"> 
+  <script>
+    // Need to do this here to prevent button elements from flashing
+    updateTheme()
+  </script> 
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->

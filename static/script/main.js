@@ -22,7 +22,7 @@ function getCookie(cname) {
 }
 
 // Update the page theme based on the cookie
-window.onload = function () {
+function updateTheme() {
   const theme = getCookie("theme");
 
   console.log(theme)
