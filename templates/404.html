@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}Page not Found{% endblock title %}
+
+{% block body %}
+<div class="container">
+    <div class="row" style="margin-top: 15%;">
+        <div class="four offset-by-four columns center-align">
+            <h1>Error 404</h1>
+            <h4>Page not Found</h4>
+            <hr class="small-margins" />
+            <div>
+                I'm terribly sorry, but I simply could not find the page that you're looking for. 
+                Maybe it is temporarily unavailable, or it might never have existed at all.
+                Either way, I wish I could provide you with the content you crave, but alas, 
+                all I can do is link you back <a href="{{ get_url(path='/') }}">home</a>.
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock body %}
