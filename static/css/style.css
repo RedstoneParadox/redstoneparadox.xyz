@@ -240,6 +240,7 @@ footer {
     transition: 0.2s;
     width: 28px;
     height: 28px;
+    margin: 2px;
     border-radius: 50%;
     --icon-filter: var(--site-secondary-text-filter);
 }
