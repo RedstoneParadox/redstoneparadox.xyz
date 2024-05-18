@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% macro card(project) %}
-<project-card>
+<div class="card project">
     <img src="{{ project.icon }}" class="project-icon" /><br/>
     <span style="font-weight:700;">{{ project["name"] }}</span><br/>
     <hr class="project-hr">
@@ -22,7 +22,7 @@
         {% endif %}
     </div>
 
-</project-card>
+</div>
 {% endmacro card %}
 
 {% block content %}

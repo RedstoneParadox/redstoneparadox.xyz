@@ -142,15 +142,17 @@ hr.small-margins {
     margin-top: 8px;
     margin-bottom: 8px;
 }
-
-/* Projects */
-project-card {
-    display: block;
+.card {
     margin: 16px;
-    width: 100%;
+    width: fit-content;
     padding: 8px;
     background-color: var(--site-secondary-background-color);
     border-top: solid 2px var(--accent-color);
+}
+
+/* Projects */
+.card.project {
+    width: 100%;
 }
 .project-icon {
     width: 64px;
@@ -211,13 +213,6 @@ project-card {
 .tag:active {
     box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.1);
     background-color: var(--site-button-select-color);
-}
-.tag-card {
-    margin: 16px;
-    width: fit-content;
-    padding: 8px;
-    background-color: var(--site-secondary-background-color);
-    border-top: solid 2px var(--accent-color);
 }
 
 /* Footer */
@@ -332,10 +327,8 @@ div.right-border {
         font-size: large;
     }
 
-    project-card {
+    .card.project {
         width: 40%;
-        padding: 16px;
-        margin: 16px;
     }
 }
 
@@ -433,7 +426,7 @@ div.right-border {
     }
 
     /* Projects */
-    project-card {
+    .card.project {
         width: 25%;
     }
 
