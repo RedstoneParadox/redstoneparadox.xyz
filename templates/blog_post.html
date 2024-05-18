@@ -15,7 +15,7 @@
     {%- for name, taxon in page.taxonomies -%}
       {%- for item in taxon -%}
       {%- set tag_url = get_taxonomy_url(kind="tags", name=item) -%}
-      <a href="{{ tag_url }}" class="tag">#{{ item }}</a>
+      <a href="{{ tag_url }}" class="btn tag">#{{ item }}</a>
       {%- endfor -%}
     {%- endfor -%}
   </div>
