@@ -1,7 +1,7 @@
 # The URL the site will be built for
 base_url = "https://redstoneparadox.xyz"
 
-ignored_content = ["projects.json"]
+ignored_content = ["**/data.json"]
 
 # When set to "true", a feed is automatically generated.
 generate_feed = true
