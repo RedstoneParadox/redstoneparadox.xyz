@@ -22,30 +22,37 @@
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" type="text/css" href="{{ get_url(path="css/normalize.css") | safe }}">
-  <link rel="stylesheet" type="text/css" href="{{ get_url(path="css/skeleton.css") | safe }}">
-  <link rel="stylesheet" type="text/css" href="{{ get_url(path="css/style.css") | safe }}">
+  <link rel="stylesheet" type="text/css" href="{{ get_url(path='css/normalize.css') | safe }}">
+  <link rel="stylesheet" type="text/css" href="{{ get_url(path='css/skeleton.css') | safe }}">
+  <link rel="stylesheet" type="text/css" href="{{ get_url(path='css/style.css') | safe }}">
+  <link rel="stylesheet" type="text/css" href="{{ get_url(path='css/color.css') | safe }}">
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="{{ get_url(path="images/redstone_torch.png") | safe }}">
+  <link rel="icon" type="image/png" href="{{ get_url(path='images/redstone_torch.png') | safe }}">
 
   <!-- Script
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script type="text/javascript" src="{{ get_url(path="script/main.js") | safe }}"></script>
+  <script type="text/javascript" src="{{ get_url(path='main.js') | safe }}"></script>
 
   {% block head %}{% endblock head %}
 
 </head>
-<body>
+<body class="default-theme"> 
+  <script>
+    // Need to do this here to prevent button elements from flashing
+    updateTheme()
+  </script> 
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+{% block body %}
 {% include "partials/header.html" %}
 <div class="container content">
   {% block content %} {% endblock %}
 </div>
 {% include "partials/footer.html" %}
+{% endblock body %}
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->

@@ -1,25 +1,19 @@
-<footer>
+<footer class="row">
   <div class="centered">
     <div class="social-icon-box border">
-    {%- set socials = load_data(path="socials.json") -%}
-    {%- for link in socials -%}
-        {%- set img_src = get_url(path=link.icon) -%}
-        {%- set class = "social-icon" -%}
-
-        {%- if link.class -%}
-          {%- set class = "social-icon " ~ link.class -%}
-        {%- endif -%}
-
-        <a href="{{ link.url }}" class="social-link" title="{{ link.title }}">
-          <img src="{{ img_src }}"  class="{{ class }}"  />
-        </a>
-    {%- endfor -%}
-    <a href="{{ get_url(path='atom.xml') }}" class="social-link" title="Atom Feed">
-      <img src="{{ get_url(path='images/social/rss.svg') }}"  class="social-icon rss"  />
-    </a>
+      {%- set socials = config.extra.nav.socials -%}
+      {%- for link in socials -%}
+          <a href="{{ link.url }}" class="btn social-link {{ link.name | lower }}" title="{{ link.title }}">
+            {% set icon_path = "images/social/" ~ link.name ~ ".svg" %}
+            <img src="{{ get_url(path=icon_path) }}" class="social-icon" alt="{{ link.name }}" />
+          </a>
+      {%- endfor -%}
+      <a href="{{ get_url(path='atom.xml') }}" class="btn social-link rss" title="Atom Feed">
+        <img src="{{ get_url(path='images/social/rss.svg') }}"  class="social-icon rss" alt="Atom Feed"  />
+      </a>
     </div>
     <div class="copyright-box u-pull-right">
       Copyright &copy; RedstoneParadox 2024
     </div>
   </div>
-  </footer>
+</footer>
