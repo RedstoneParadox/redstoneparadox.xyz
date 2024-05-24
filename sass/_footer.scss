@@ -1,0 +1,13 @@
+/* Footer */
+footer {
+    width: 100%;
+    background-color: var(--site-secondary-background-color);
+    padding-top: 4px;
+    min-height: 42px;
+    flex-shrink: 0;
+    margin-top: 20px;
+}
+.copyright-box {
+    color: var(--site-secondary-text-color);
+    font-weight: 600;
+}

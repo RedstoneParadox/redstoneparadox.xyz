@@ -1,0 +1,19 @@
+/* Projects */
+.card.project {
+    width: 100%;
+}
+.project-icon {
+    width: 64px;
+    border: 2px solid var(--site-border-color);
+    background-color: var(--site-background-color);
+}
+.project-hr {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.projects-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
