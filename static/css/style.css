@@ -205,10 +205,11 @@ footer {
 
 /* Social Links */
 .btn.social-link {
-    transition: 0.2s;
     margin: 2px;
     border-radius: 50%;
     --icon-filter: var(--site-secondary-text-filter);
+    width: 28px;
+    height: 28px;
 }
 .social-link.github:hover {
     --icon-filter: invert(38%) sepia(11%) saturate(1981%) hue-rotate(222deg) brightness(94%) contrast(95%);
@@ -234,7 +235,7 @@ footer {
 .social-icon.rss {
     width: 16px;
     height: 16px;
-    margin: 4px;
+    margin: 6px;
 }
 
 .social-icon-box {
@@ -418,8 +419,7 @@ div.right-border {
     }
 
     /* Social Links */
-    .social-link {
-        display: block;
+    .btn.social-link {
         width: 36px;
         height: 36px;
         border-radius: 50%;
