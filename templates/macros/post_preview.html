@@ -6,8 +6,8 @@
                 <h5>{{ post.title }}</h5>
             </div>
             <div class="u-pull-right secondary-text-color">
-                <img src="{{ get_url(path='images/CharmPencil.svg') }}" class="inline-icon" alt="Published" /> {{ post.date | date(format="%B %e, %Y") }} <br />
-                <img src="{{ get_url(path='images/CharmClock.svg') }}" class="inline-icon" alt="Read Time" /> {{ post.reading_time }} min read
+                <img src="{{ get_url(path='media/CharmPencil.svg') }}" class="inline-icon" alt="Published" /> {{ post.date | date(format="%B %e, %Y") }} <br />
+                <img src="{{ get_url(path='media/CharmClock.svg') }}" class="inline-icon" alt="Read Time" /> {{ post.reading_time }} min read
             </div>
         </div>
         {{ post.description }} <br /> <a href="{{ url }}">Read More →</a><br />
