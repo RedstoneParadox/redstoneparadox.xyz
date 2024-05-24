@@ -170,26 +170,6 @@ hr.small-margins {
     justify-content: space-evenly;
 }
 
-/* Blog */
-.toc-box {
-    position: sticky;
-    top: 0;
-}
-.post-title-box {
-    width: 70%;
-    float: left;
-}
-.post-preview-info-box {
-    width: 30%;
-    float: right;
-    color: var(--site-secondary-text-color);
-    text-align: right;
-}
-.post-read-time::before {
-    content: "\a";
-    white-space: pre;
-}
-
 /* Tags */
 .btn.tag {
     border-radius: 16px;
@@ -296,6 +276,14 @@ div.right-border {
 
 .secondary-text-color {
     color: var(--site-secondary-text-color);
+}
+
+.inline-icon {
+    width: 1em;
+    height: 1em;
+    filter: var(--site-secondary-text-filter);
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 /* Media Queries */
