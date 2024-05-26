@@ -4,6 +4,6 @@ COPY . /project
 WORKDIR /project
 RUN ["zola", "build"]
 
-FROM  --platform=linux/arm64/v8 caddy:2.7.6-alpine
+FROM ghcr.io/static-web-server/static-web-server:2.31.1-alpine
 WORKDIR /
-COPY --from=zola /project/public /usr/share/caddy
+COPY --from=zola /project/public /public

@@ -6,7 +6,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
   <title>{%- block title -%}{{ section.title }}{%- endblock title -%}</title>
-  <meta name="description" content="">
+  <meta name="description" content="{%- block description -%}{{ section.description }}{%- endblock description -%}">
   <meta name="author" content="RedstoneParadox">
 
   <!-- Mobile Specific Metas
@@ -22,14 +22,13 @@
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" type="text/css" href="{{ get_url(path='css/normalize.css') | safe }}">
-  <link rel="stylesheet" type="text/css" href="{{ get_url(path='css/skeleton.css') | safe }}">
-  <link rel="stylesheet" type="text/css" href="{{ get_url(path='css/style.css') | safe }}">
-  <link rel="stylesheet" type="text/css" href="{{ get_url(path='css/color.css') | safe }}">
+  <link rel="stylesheet" type="text/css" href="{{ get_url(path='normalize.css') | safe }}">
+  <link rel="stylesheet" type="text/css" href="{{ get_url(path='skeleton.css') | safe }}">
+  <link rel="stylesheet" type="text/css" href="{{ get_url(path='style.css') }}">
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="{{ get_url(path='images/redstone_torch.png') | safe }}">
+  <link rel="icon" type="image/png" href="{{ get_url(path='media/redstone_torch.png') | safe}}">
 
   <!-- Script
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->

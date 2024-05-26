@@ -1,9 +1,8 @@
 <header class="row">
     <div class="container">
       <div class="site-name-icon-box u-pull-left">
-        {%- set pfp_url = get_url(path="images/redstone_torch.png") -%}
-        <img src="{{ pfp_url }}" class="site-icon u-pull-left" alt="Website Icon">
-        <div class="site-name-box u-pull-left">Redstone Paradox</div>
+        <img src="{{ get_url(path='media/redstone_torch.webp') }}" class="site-icon u-pull-left" alt="">
+        <div class="site-name-box u-pull-left">RedstoneParadox</div>
       </div>
       <div class="u-pull-right" style="width: fit-content;">
         <div class="header-nav u-pull-left">
@@ -16,8 +15,8 @@
           {%- endif -%}
           {%- endfor -%}
         </div>
-        {%- set light_icon = get_url(path="images/theme/sun-fill.svg") -%}
-        {%- set dark_icon = get_url(path="images/theme/moon-fill.svg") -%}
+        {%- set light_icon = get_url(path="media/theme/sun-fill.svg") -%}
+        {%- set dark_icon = get_url(path="media/theme/moon-fill.svg") -%}
         <theme-toggle class="theme-toggle u-pull-right has-button" title="Toggle Theme" light-icon="{{ light_icon }}" dark-icon="{{ dark_icon }}" />
       </div>
     </div>

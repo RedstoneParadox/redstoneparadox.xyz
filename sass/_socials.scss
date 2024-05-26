@@ -1,0 +1,52 @@
+/* Social Links */
+.btn.social-link {
+    margin: 2px;
+    border-radius: 50%;
+    --icon-filter: var(--site-secondary-text-filter);
+    width: 28px;
+    height: 28px;
+}
+.social-link.github:hover {
+    --icon-filter: invert(38%) sepia(11%) saturate(1981%) hue-rotate(222deg) brightness(94%) contrast(95%);
+}
+.social-link.youtube:hover {
+    --icon-filter: invert(15%) sepia(97%) saturate(7479%) hue-rotate(0deg) brightness(95%) contrast(113%);
+}
+.social-link.modrinth:hover {
+    --icon-filter: invert(96%) sepia(82%) saturate(4279%) hue-rotate(66deg) brightness(86%) contrast(97%);
+}
+.social-link.discord:hover {
+    --icon-filter: invert(33%) sepia(94%) saturate(2801%) hue-rotate(226deg) brightness(102%) contrast(90%);
+}
+.social-link.rss:hover {
+    --icon-filter: invert(75%) sepia(42%) saturate(5562%) hue-rotate(2deg) brightness(106%) contrast(102%);
+}
+.social-icon {
+    filter: var(--icon-filter);
+    width: 24px;
+    height: 24px;
+    margin: 2px;
+}
+.social-icon.rss {
+    width: 16px;
+    height: 16px;
+    margin: 6px;
+}
+
+.social-icon-box {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2px;
+    margin-bottom: 2px;
+}
+.social-icon-box.border {
+    border-bottom: 2px solid var(--site-border-color);
+}
+.social-icon-box.centered {
+    width: 100%;
+}

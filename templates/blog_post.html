@@ -1,17 +1,25 @@
 {% extends "base.html" %}
 
 {%- block title -%}Blog - {{ page.title }}{%- endblock title -%}
+{%- block description -%}{{ page.description }}{%- endblock description -%}
 
 {% block content %}
 <div class="row" >
-  <div class="eight offset-by-two columns">
-    <h1>{{ page.title }}</h1>
+  <div class="container">
+    <h1 class="center-align">{{ page.title }}</h1>
     
-    <span class="secondary-text-color">{{ page.description }}</span><br />
-    {{ page.date | date(format="%B %e, %Y") }} | {{ page.reading_time }} min read
-    <hr />
+    <div class="row">
+      <div class="u-pull-left">
+        <span class="secondary-text-color">{{ page.description }}</span><br /><br />
+      </div>
+      <div class="u-pull-right">
+        <img src="{{ get_url(path='media/CharmPencil.svg') }}" class="inline-icon" alt="Published" /> {{ page.date | date(format="%B %e, %Y") }} <br />
+        <img src="{{ get_url(path='media/CharmClock.svg') }}" class="inline-icon" alt="Read Time" /> {{ page.reading_time }} min
+      </div>
+    </div>
+    <hr class="small-margins" />
     {{ page.content | safe }}
-    <hr>
+    <hr class="small-margins">
     {%- for name, taxon in page.taxonomies -%}
       {%- for item in taxon -%}
       {%- set tag_url = get_taxonomy_url(kind="tags", name=item) -%}

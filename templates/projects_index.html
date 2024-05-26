@@ -2,22 +2,22 @@
 
 {% macro card(project) %}
 <div class="card project">
-    <img src="{{ project.icon }}" class="project-icon" /><br/>
-    <span style="font-weight:700;">{{ project["name"] }}</span><br/>
+    <img src="{{ get_url(path='/projects/' ~ project.icon) }}" class="project-icon" alt="" /><br/>
+    <span style="font-weight:700;">{{ project.name }}</span><br/>
     <hr class="project-hr">
-    {{ project["desc"] }}
+    {{ project.desc }}
     <hr class="project-hr">
     
     <div class="social-icon-box centered">
         {% if project.github %}
         {%- set gh_url = project.github -%}
         <a href="{{ project.github }}" class="btn social-link github" title = "GitHub Repo">
-            <img src="{{ get_url(path='images/social/github.svg') | safe }}" class="social-icon" alt="GitHub">
+            <img src="{{ get_url(path='media/social/github.svg') | safe }}" class="social-icon" alt="GitHub">
         </a>
         {% endif %}
         {% if project.modrinth %}
         <a href="{{ project.modrinth }}" class="btn social-link modrinth" title="Go to Modrinth project page">
-            <img src="{{ get_url(path='images/social/modrinth.svg') | safe }}" class="social-icon" alt="modrinth">
+            <img src="{{ get_url(path='media/social/modrinth.svg') | safe }}" class="social-icon" alt="modrinth">
         </a>
         {% endif %}
     </div>
